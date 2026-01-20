@@ -1,0 +1,162 @@
+/* =========================
+   RESET GENERAL
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+body {
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+  background-color: #004D98; /* Azul Barça */
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* CONTENEDOR LOGO + MENU */
+.logo-menu {
+  position: relative;
+}
+
+/* LOGO */
+.logo {
+  height: 60px;
+  cursor: pointer;
+}
+
+/* =========================
+   MENÚ DESPLEGABLE
+========================= */
+.menu {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  background-color: #004D98;
+  list-style: none;
+  padding: 10px 20px;
+  display: flex;
+  gap: 10px;
+  width: 320px;
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+/* Mostrar menú al pasar por el logo */
+.logo:hover + .menu,
+.menu:hover {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ENLACES DEL MENÚ */
+.menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: background 0.3s;
+}
+
+.menu li a:hover {
+  background-color: #A50044;
+  border-radius: 4px;
+}
+
+/* =========================
+   MAIN
+========================= */
+main {
+  flex: 1;
+}
+
+/* =========================
+   SECCIÓN BIENVENIDA
+========================= */
+.bienvenida {
+  background-image: url('../images/campnou.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* CAPA OSCURA */
+.bienvenida .overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* TEXTO */
+.bienvenida h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.bienvenida p {
+  font-size: 1.5rem;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  background-color: #A50044;
+  color: #FFC72C;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+}
+
+footer .social-icons a {
+  color: #FFC72C;
+  margin: 0 10px;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+  color: white;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+
+  .menu {
+    flex-direction: column;
+    width: 180px;
+  }
+
+  .bienvenida h1 {
+    font-size: 2rem;
+  }
+
+  .bienvenida p {
+    font-size: 1.2rem;
+  }
+}
