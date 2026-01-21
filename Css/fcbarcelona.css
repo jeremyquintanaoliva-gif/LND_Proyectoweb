@@ -92,7 +92,7 @@ main {
    SECCIÓN BIENVENIDA
 ========================= */
 .bienvenida {
-  background-image: url('../images/campnou.jpeg');
+  background-image: url('../imagen/campnou.jpeg');
   background-size: cover;
   background-position: center;
   height: 80vh;
@@ -142,21 +142,3 @@ footer .social-icons a:hover {
   color: white;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
-@media (max-width: 768px) {
-
-  .menu {
-    flex-direction: column;
-    width: 180px;
-  }
-
-  .bienvenida h1 {
-    font-size: 2rem;
-  }
-
-  .bienvenida p {
-    font-size: 1.2rem;
-  }
-}
