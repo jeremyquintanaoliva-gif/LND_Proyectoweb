@@ -1,93 +1,56 @@
-/* ======================================================
-   RESPONSIVE TABLET (≤ 768px)
-====================================================== */
+/* =========================
+   TABLET
+========================= */
 @media (max-width: 768px) {
 
-  /* HEADER */
-  header {
-    justify-content: center;
-  }
-
-  /* MENÚ */
   .menu {
-    width: 240px;
-    padding: 10px;
+    top: 100%;
+    left: 0;
+    transform: none;
+    flex-direction: column;
+    width: 220px;
   }
 
-  /* BIENVENIDA */
+  .menu li a {
+    padding: 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+
   .bienvenida {
     height: 70vh;
+    background-position: top;
   }
 
-  .bienvenida h1 {
-    font-size: 2.2rem;
-  }
-
-  .bienvenida p {
-    font-size: 1.3rem;
-  }
-
-  .bienvenida .overlay {
-    padding: 15px 25px;
-  }
-
-  /* FOOTER */
-  footer {
-    font-size: 0.95rem;
+  .overlay {
+    padding: 20px 25px;
   }
 }
 
-/* ======================================================
-   RESPONSIVE MÓVIL (≤ 480px)
-====================================================== */
+/* =========================
+   MÓVIL
+========================= */
 @media (max-width: 480px) {
 
-  /* HEADER */
   header {
     padding: 10px 15px;
   }
 
   .logo {
-    height: 50px;
+    height: 45px;
   }
 
-  /* MENÚ */
   .menu {
-    flex-direction: column;
     width: 180px;
-    left: 0;
-    top: 70px;
-    transform: none;
   }
 
   .menu li a {
-    text-align: center;
     padding: 10px;
   }
 
-  /* BIENVENIDA */
-  .bienvenida {
-    height: 60vh;
+  .overlay {
+    padding: 15px 20px;
   }
-
-  .bienvenida h1 {
-    font-size: 1.7rem;
-  }
-
-  .bienvenida p {
-    font-size: 1.1rem;
-  }
-
-  .bienvenida .overlay {
-    padding: 12px 18px;
-  }
-
-  /* FOOTER */
   footer {
-    font-size: 0.85rem;
-  }
-
-  footer .social-icons {
-    margin-top: 10px;
+    padding: 15px;
   }
 }
