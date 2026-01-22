@@ -1,5 +1,5 @@
 /* =========================
-   RESET
+   RESET GENERAL
 ========================= */
 * {
   margin: 0;
@@ -18,10 +18,10 @@ body {
 }
 
 /* =========================
-   HEADER
+   HEADER FIJO
 ========================= */
 header {
-  background-color: #004D98;
+  background-color: #004D98; /* azul Barça */
   padding: 15px 30px;
   position: fixed;
   width: 100%;
@@ -29,23 +29,20 @@ header {
   z-index: 10;
 }
 
-main{
-  flex: 1;
-  padding-top: 90px;
-}
-
+/* CONTENEDOR LOGO + MENÚ */
 .logo-menu {
   position: relative;
   display: inline-block;
 }
 
+/* LOGO */
 .logo {
   height: 60px;
   cursor: pointer;
 }
 
 /* =========================
-   MENÚ (DESKTOP)
+   MENÚ DESKTOP
 ========================= */
 .menu {
   position: absolute;
@@ -63,21 +60,24 @@ main{
   transition: opacity 0.3s;
 }
 
+/* MOSTRAR MENÚ */
 .logo:hover + .menu,
 .menu:hover {
   opacity: 1;
   pointer-events: auto;
 }
 
+/* ENLACES */
 .menu li a {
   color: white;
   text-decoration: none;
   padding: 8px 12px;
   white-space: nowrap;
+  transition: background-color 0.3s;
 }
 
 .menu li a:hover {
-  background-color: #A50044;
+  background-color: #A50044; /* granate */
   border-radius: 3px;
 }
 
@@ -86,14 +86,15 @@ main{
 ========================= */
 main {
   flex: 1;
+  padding-top: 90px; /* espacio para header fijo */
 }
 
 /* =========================
-   BIENVENIDA (IMAGEN)
+   BIENVENIDA
 ========================= */
 .bienvenida {
   height: 90vh;
-  background-image: url('../Imagen/campnou.jpg');
+  background-image: url('../imagen/campnou.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -102,13 +103,16 @@ main {
   align-items: center;
 }
 
-/* OVERLAY */
+/* OVERLAY ANIMADO */
 .overlay {
-  background: rgba(0,0,0,0.55);
+  background: rgba(0, 0, 0, 0.55);
   padding: 30px 50px;
   border-radius: 12px;
   text-align: center;
   color: white;
+
+  animation: entradaOverlay 1.2s ease-out forwards,
+             pulso 3s ease-in-out infinite;
 }
 
 /* TEXTO */
@@ -119,6 +123,29 @@ main {
 
 .overlay p {
   font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+/* =========================
+   ANIMACIONES
+========================= */
+@keyframes entradaOverlay {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes pulso {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
 }
 
 /* =========================
@@ -137,6 +164,7 @@ footer {
   margin: 0 8px;
   font-size: 1.4rem;
   text-decoration: none;
+  transition: color 0.3s;
 }
 
 .social-icons a:hover {
