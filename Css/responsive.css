@@ -1,14 +1,17 @@
-/* =========================
-   TABLET
-========================= */
+/* TABLET */
 @media (max-width: 768px) {
+
+  header {
+    padding: 12px 20px;
+  }
 
   .menu {
     top: 100%;
     left: 0;
     transform: none;
     flex-direction: column;
-    width: 220px;
+    width: 100%;
+    border-radius: 0;
   }
 
   .menu li a {
@@ -24,11 +27,21 @@
   .overlay {
     padding: 20px 25px;
   }
+
+  .inicio {
+    padding: 40px 25px;
+  }
+
+  .carousel {
+    height: 260px;
+  }
+
+  .slides img {
+    height: 260px;
+  }
 }
 
-/* =========================
-   MÓVIL
-========================= */
+/* MÓVIL */
 @media (max-width: 480px) {
 
   header {
@@ -40,16 +53,33 @@
   }
 
   .menu {
-    width: 180px;
+    width: 100%;
   }
 
   .menu li a {
     padding: 10px;
   }
 
+  .bienvenida {
+    height: 60vh;
+  }
+
   .overlay {
     padding: 15px 20px;
   }
+
+  .inicio {
+    padding: 25px 15px;
+  }
+
+  .carousel {
+    height: 200px;
+  }
+
+  .slides img {
+    height: 200px;
+  }
+
   footer {
     padding: 15px;
   }

@@ -1,15 +1,10 @@
-/* =========================
-   RESET GENERAL
-========================= */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* =========================
-   BODY
-========================= */
 body {
   font-family: 'Montserrat', sans-serif;
   min-height: 100vh;
@@ -17,11 +12,9 @@ body {
   flex-direction: column;
 }
 
-/* =========================
-   HEADER FIJO
-========================= */
+/* HEADER */
 header {
-  background-color: #004D98; /* azul Barça */
+  background-color: #004D98;
   padding: 15px 30px;
   position: fixed;
   width: 100%;
@@ -29,21 +22,17 @@ header {
   z-index: 10;
 }
 
-/* CONTENEDOR LOGO + MENÚ */
 .logo-menu {
   position: relative;
   display: inline-block;
 }
 
-/* LOGO */
 .logo {
   height: 60px;
   cursor: pointer;
 }
 
-/* =========================
-   MENÚ DESKTOP
-========================= */
+/* MENU */
 .menu {
   position: absolute;
   top: 50%;
@@ -60,14 +49,12 @@ header {
   transition: opacity 0.3s;
 }
 
-/* MOSTRAR MENÚ */
 .logo:hover + .menu,
 .menu:hover {
   opacity: 1;
   pointer-events: auto;
 }
 
-/* ENLACES */
 .menu li a {
   color: white;
   text-decoration: none;
@@ -77,21 +64,17 @@ header {
 }
 
 .menu li a:hover {
-  background-color: #A50044; /* granate */
+  background-color: #A50044;
   border-radius: 3px;
 }
 
-/* =========================
-   MAIN
-========================= */
+/* MAIN */
 main {
   flex: 1;
-  padding-top: 90px; /* espacio para header fijo */
+  padding-top: 90px;
 }
 
-/* =========================
-   BIENVENIDA
-========================= */
+/* PORTADA */
 .bienvenida {
   height: 90vh;
   background-image: url('../imagen/campnou.jpg');
@@ -101,33 +84,88 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
-/* OVERLAY ANIMADO */
 .overlay {
-  background: rgba(0, 0, 0, 0.55);
-  padding: 30px 50px;
-  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 35px 60px;
+  border-radius: 14px;
   text-align: center;
   color: white;
-
   animation: entradaOverlay 1.2s ease-out forwards,
-             pulso 3s ease-in-out infinite;
+             pulso 4s ease-in-out infinite;
 }
 
-/* TEXTO */
 .overlay h1 {
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  margin-bottom: 10px;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin-bottom: 12px;
 }
 
 .overlay p {
-  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
 }
 
-/* =========================
-   ANIMACIONES
-========================= */
+/* SECCIÓN INICIO */
+.inicio {
+  padding: 50px 80px;
+  background-color: #f2f2f2;
+}
+
+.intro-texto {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intro-texto h2 {
+  font-size: 2.4rem;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.intro-texto p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* CARRUSEL PROFESIONAL */
+.carousel {
+  margin-top: 30px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 2px solid #004D98;
+  background: #000;
+  height: 320px;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  width: calc(10 * 100%);
+  animation: slide 40s linear infinite;
+}
+
+.slides img {
+  width: 10%;
+  height: 320px;
+  object-fit: contain;
+  background: #000;
+  padding: 10px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* ANIMACIONES */
 @keyframes entradaOverlay {
   0% {
     opacity: 0;
@@ -148,15 +186,18 @@ main {
   }
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 footer {
   background-color: #A50044;
   color: #FFC72C;
   text-align: center;
   padding: 20px;
   margin-top: auto;
+}
+
+.copy {
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .social-icons a {
