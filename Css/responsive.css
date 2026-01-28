@@ -1,42 +1,23 @@
 /* TABLET */
 @media (max-width: 768px) {
 
-  header {
-    padding: 12px 20px;
-  }
-
   .menu {
     top: 100%;
     left: 0;
     transform: none;
     flex-direction: column;
-    width: 100%;
-    border-radius: 0;
-  }
-
-  .menu li a {
-    padding: 12px;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
+    width: 220px;
   }
 
   .bienvenida {
     height: 70vh;
-    background-position: top;
-  }
-
-  .overlay {
-    padding: 20px 25px;
   }
 
   .inicio {
-    padding: 40px 25px;
+    padding: 50px 30px;
   }
 
   .carousel {
-    height: 260px;
-  }
-
-  .slides img {
     height: 260px;
   }
 }
@@ -52,35 +33,19 @@
     height: 45px;
   }
 
-  .menu {
-    width: 100%;
-  }
-
-  .menu li a {
-    padding: 10px;
-  }
-
-  .bienvenida {
-    height: 60vh;
-  }
-
   .overlay {
-    padding: 15px 20px;
+    padding: 25px 30px;
   }
 
-  .inicio {
-    padding: 25px 15px;
+  .overlay h1 {
+    font-size: 2.4rem;
+  }
+
+  .overlay p {
+    font-size: 1.2rem;
   }
 
   .carousel {
     height: 200px;
-  }
-
-  .slides img {
-    height: 200px;
-  }
-
-  footer {
-    padding: 15px;
   }
 }
