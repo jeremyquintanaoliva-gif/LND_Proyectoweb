@@ -1,6 +1,4 @@
-/* TABLET */
 @media (max-width: 768px) {
-
   .menu {
     top: 100%;
     left: 0;
@@ -9,43 +7,29 @@
     width: 220px;
   }
 
-  .bienvenida {
-    height: 70vh;
+  .overlay {
+    padding: 25px 35px;
   }
 
-  .inicio {
-    padding: 50px 30px;
-  }
-
-  .carousel {
-    height: 260px;
+  .carousel img {
+    height: 240px;
   }
 }
 
-/* MÓVIL */
 @media (max-width: 480px) {
-
-  header {
-    padding: 10px 15px;
-  }
-
   .logo {
     height: 45px;
   }
 
-  .overlay {
-    padding: 25px 30px;
-  }
-
   .overlay h1 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
   }
 
   .overlay p {
     font-size: 1.2rem;
   }
 
-  .carousel {
+  .carousel img {
     height: 200px;
   }
 }
