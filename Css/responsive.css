@@ -1,35 +1,38 @@
+/* =========================
+   TABLET
+========================= */
 @media (max-width: 768px) {
-  .menu {
-    top: 100%;
-    left: 0;
-    transform: none;
-    flex-direction: column;
-    width: 220px;
+  .hero-overlay {
+    padding: 25px 30px;
   }
-
-  .overlay {
-    padding: 25px 35px;
+  .inicio {
+    padding: 60px 6%;
   }
-
-  .carousel img {
-    height: 240px;
+  .carrusel-track img {
+    height: 300px; /* más compacto en tablet */
   }
 }
 
+/* =========================
+   MÓVIL
+========================= */
 @media (max-width: 480px) {
+  header {
+    padding: 10px 15px;
+  }
   .logo {
     height: 45px;
   }
-
-  .overlay h1 {
-    font-size: 2.2rem;
+  .hero-overlay {
+    padding: 15px 20px;
   }
-
-  .overlay p {
-    font-size: 1.2rem;
+  .inicio {
+    padding: 40px 5%;
   }
-
-  .carousel img {
-    height: 200px;
+  .carrusel-track img {
+    height: 200px; /* compacto en móvil */
+  }
+  footer {
+    padding: 15px;
   }
 }
