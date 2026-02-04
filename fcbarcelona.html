@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FC Barcelona</title>
-  <link rel="icon" href="Imagen/escudo.png" type="image/png">
+  <link rel="icon" href="imagen/escudo.png" type="image/png">
+
   <!-- CSS -->
   <link rel="stylesheet" href="css/fcbarcelona.css">
 
-  <!-- Google Font -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 
   <!-- FontAwesome -->
@@ -33,7 +34,7 @@
 
   <main>
 
-    <!-- PORTADA -->
+    <!-- HERO / PORTADA -->
     <section class="hero">
       <div class="hero-overlay">
         <h1>FC Barcelona</h1>
@@ -41,7 +42,7 @@
       </div>
     </section>
 
-    <!-- INICIO / SECCIÓN 1 -->
+    <!-- INICIO / BREVE HISTORIA -->
     <section id="inicio" class="inicio">
       <div class="inicio-texto">
         <h2>Una forma única de entender el fútbol</h2>
@@ -59,12 +60,150 @@
           <img src="imagen/carrousel/aficion1.jpg" alt="Afición del FC Barcelona en el estadio">
           <img src="imagen/carrousel/celebraciongol.jpg" alt="Jugadores del FC Barcelona celebrando un gol">
           <img src="imagen/carrousel/partidonocturno.png" alt="Partido nocturno en el Camp Nou">
-          <img src="imagen/carrousel/Detallegradas.png" alt="Detalle de las gradas del Camp Nou">
+          <img src="imagen/carrousel/detallegradas.png" alt="Detalle de las gradas del Camp Nou">
           <img src="imagen/carrousel/entradacampnou.jpg" alt="Entrada principal del Camp Nou">
-          <img src="imagen/barca7.jpg" alt="Celebración con la afición blaugrana">
-          <img src="imagen/barca8.jpg" alt="Panorámica del estadio Camp Nou">
-          <img src="imagen/barca9.jpg" alt="Equipo del FC Barcelona posando antes del partido">
-          <img src="imagen/barca10.jpg" alt="Ambiente previo a un partido del Barça">
+          <img src="imagen/carrousel/barca7.jpg" alt="Celebración con la afición blaugrana">
+          <img src="imagen/carrousel/barca8.jpg" alt="Panorámica del estadio Camp Nou">
+          <img src="imagen/carrousel/barca9.jpg" alt="Equipo del FC Barcelona posando antes del partido">
+          <img src="imagen/carrousel/barca10.jpg" alt="Ambiente previo a un partido del Barça">
+        </div>
+      </div>
+    </section>
+
+    <!-- HISTORIA -->
+    <section id="historia" class="historia">
+      <h2>Historia y Trofeos</h2>
+      <p class="historia-intro">
+        Desde 1899, el FC Barcelona ha forjado su historia a través de la excelencia, la pasión y el compromiso con la cantera y la comunidad.  
+        Més que un club refleja su filosofía de juego, su identidad y su legado.
+      </p>
+      <div class="historia-grid">
+        <div class="historia-item">
+          <i class="fas fa-trophy"></i>
+          <h3>Ligas</h3>
+          <p>27 títulos de LaLiga</p>
+        </div>
+        <div class="historia-item">
+          <i class="fas fa-futbol"></i>
+          <h3>Copa del Rey</h3>
+          <p>31 títulos</p>
+        </div>
+        <div class="historia-item">
+          <i class="fas fa-globe"></i>
+          <h3>Ligas Europeas</h3>
+          <p>5 UEFA Champions League</p>
+        </div>
+      </div>
+
+      <table class="trofeos">
+        <thead>
+          <tr>
+            <th>Competición</th>
+            <th>Títulos</th>
+            <th>Último año</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>LaLiga</td>
+            <td>27</td>
+            <td>2022</td>
+          </tr>
+          <tr>
+            <td>Copa del Rey</td>
+            <td>31</td>
+            <td>2021</td>
+          </tr>
+          <tr>
+            <td>UEFA Champions League</td>
+            <td>5</td>
+            <td>2015</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- PRIMER EQUIPO -->
+    <section id="primer-equipo" class="equipo">
+      <h2>Primer Equipo</h2>
+      <div class="equipo-grid">
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="imagen/jugadores/terstegen.jpg" alt="Marc-André ter Stegen">
+            </div>
+            <div class="card-back">
+              <h3>Ter Stegen</h3>
+              <span>Portero</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="imagen/jugadores/gavi.jpg" alt="Gavi">
+            </div>
+            <div class="card-back">
+              <h3>Gavi</h3>
+              <span>Mediocampista</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="imagen/jugadores/pedri.jpg" alt="Pedri">
+            </div>
+            <div class="card-back">
+              <h3>Pedri</h3>
+              <span>Mediocampista</span>
+            </div>
+          </div>
+        </div>
+        <!-- Añade el resto de jugadores de forma similar -->
+      </div>
+    </section>
+
+    <!-- NOTICIAS -->
+    <section id="noticias" class="noticias">
+      <h2>Últimas Noticias</h2>
+      <div class="noticias-grid">
+        <article>
+          <h3>Victoria en el Clásico</h3>
+          <p>El Barça se impone 3-1 al Real Madrid en un partido lleno de emociones y goles espectaculares.</p>
+        </article>
+        <article>
+          <h3>Renovación de Pedri</h3>
+          <p>El joven talento renueva contrato hasta 2027 consolidando su futuro en el club.</p>
+        </article>
+        <article>
+          <h3>Nueva equipación 2026</h3>
+          <p>Se presenta la nueva camiseta oficial de la temporada con un diseño moderno y elegante.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- TIENDA -->
+    <section id="tienda" class="tienda">
+      <h2>Productos Destacados</h2>
+      <div class="tienda-grid">
+        <div class="producto">
+          <img src="imagen/tienda/camiseta1.jpg" alt="Camiseta oficial FC Barcelona">
+          <h4>Camiseta Oficial</h4>
+          <p>85€</p>
+          <button>Comprar</button>
+        </div>
+        <div class="producto">
+          <img src="imagen/tienda/chandal1.jpg" alt="Chándal oficial FC Barcelona">
+          <h4>Chándal Oficial</h4>
+          <p>120€</p>
+          <button>Comprar</button>
+        </div>
+        <div class="producto">
+          <img src="imagen/tienda/gorra1.jpg" alt="Gorra FC Barcelona">
+          <h4>Gorra Oficial</h4>
+          <p>25€</p>
+          <button>Comprar</button>
         </div>
       </div>
     </section>

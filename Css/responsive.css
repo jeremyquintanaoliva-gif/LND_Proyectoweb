@@ -1,7 +1,15 @@
-/* =========================
-   TABLET
-========================= */
+/* ========================= TABLET ========================= */
 @media (max-width: 768px) {
+  header {
+    padding: 12px 20px;
+  }
+  .logo {
+    height: 50px;
+  }
+  .menu {
+    flex-direction: column;
+    width: 180px;
+  }
   .hero-overlay {
     padding: 25px 30px;
   }
@@ -9,13 +17,14 @@
     padding: 60px 6%;
   }
   .carrusel-track img {
-    height: 300px; /* más compacto en tablet */
+    height: 300px;
+  }
+  .equipo-grid {
+    gap: 20px;
   }
 }
 
-/* =========================
-   MÓVIL
-========================= */
+/* ========================= MÓVIL ========================= */
 @media (max-width: 480px) {
   header {
     padding: 10px 15px;
@@ -23,16 +32,19 @@
   .logo {
     height: 45px;
   }
+  .menu {
+    width: 140px;
+  }
   .hero-overlay {
-    padding: 15px 20px;
+    padding: 20px 15px;
   }
   .inicio {
-    padding: 40px 5%;
+    padding: 50px 5%;
   }
   .carrusel-track img {
-    height: 200px; /* compacto en móvil */
+    height: 220px;
   }
-  footer {
-    padding: 15px;
+  .equipo-grid {
+    gap: 15px;
   }
 }
