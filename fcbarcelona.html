@@ -1,226 +1,348 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FC Barcelona</title>
-  <link rel="icon" href="imagen/escudo.png" type="image/png">
 
-  <!-- CSS -->
+  <title>FC Barcelona – Més que un club</title>
+  <link rel="icon" href="imagen/escudo.png">
+
   <link rel="stylesheet" href="css/fcbarcelona.css">
+  <link rel="stylesheet" href="css/responsive.css">
 
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <!-- FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <div class="logo-menu">
-      <img src="imagen/escudo.png" alt="Escudo FC Barcelona" class="logo">
-      <ul class="menu">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#historia">Historia</a></li>
-        <li><a href="#primer-equipo">Primer Equipo</a></li>
-        <li><a href="#noticias">Noticias</a></li>
-        <li><a href="#tienda">Tienda</a></li>
-        <li><a href="trabaja.html">Trabaja con nosotros</a></li>
-      </ul>
+<!-- HEADER -->
+<header>
+
+  <div class="logo-menu">
+
+    <img src="imagen/escudo.png" class="logo" alt="Escudo FC Barcelona">
+
+    <ul class="menu">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#historia">Historia</a></li>
+      <li><a href="#equipo">Primer Equipo</a></li>
+      <li><a href="#noticias">Noticias</a></li>
+      <li><a href="#tienda">Tienda</a></li>
+      <li><a href="formulario.html">Trabaja con nosotros</a></li>
+    </ul>
+
+  </div>
+
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+
+  <div class="hero-overlay">
+    <h1>FC Barcelona</h1>
+    <p>Més que un club</p>
+  </div>
+
+</section>
+
+
+<!-- INICIO -->
+<section id="inicio" class="inicio">
+
+  <h2>Una forma única de entender el fútbol</h2>
+
+  <p>
+    Más que un club es una filosofía basada en cantera,
+    valores, compromiso y excelencia deportiva.
+  </p>
+
+
+  <!-- CARRUSEL -->
+  <div class="carrusel">
+
+    <div class="carrusel-track">
+
+      <img src="imagen/carrousel/campnou1.jpg" alt="Camp Nou lleno en partido oficial">
+      <img src="imagen/carrousel/aficion1.jpg" alt="Afición del FC Barcelona animando">
+      <img src="imagen/carrousel/celebraciongol.jpg" alt="Celebración de gol del Barça">
+      <img src="imagen/carrousel/Detallegradas.png" alt="Detalle de las gradas del Camp Nou">
+      <img src="imagen/carrousel/entradacampnou.jpg" alt="Entrada al Camp Nou con banderas blaugranas">
+      <img src="imagen/carrousel/6.jpg" alt="Jugadores celebrando título">
+      <img src="imagen/carrousel/partidonocturno.png" alt="Partido de Champions League">
+      <img src="imagen/carrousel/8.jpg" alt="Afición con banderas blaugranas">
+      <img src="imagen/carrousel/9.jpg" alt="Gol histórico del FC Barcelona">
+      <img src="imagen/carrousel/10.jpg" alt="Tifo en el Camp Nou">
+
     </div>
-  </header>
 
-  <main>
+  </div>
 
-    <!-- HERO / PORTADA -->
-    <section class="hero">
-      <div class="hero-overlay">
-        <h1>FC Barcelona</h1>
-        <p>Més que un club</p>
-      </div>
-    </section>
+</section>
 
-    <!-- INICIO / BREVE HISTORIA -->
-    <section id="inicio" class="inicio">
-      <div class="inicio-texto">
-        <h2>Una forma única de entender el fútbol</h2>
-        <p>
-          Identidad, cantera y compromiso.  
-          El FC Barcelona representa una manera de jugar, de competir
-          y de sentir el fútbol que trasciende generaciones.
-        </p>
-      </div>
 
-      <!-- CARRUSEL -->
-      <div class="carrusel">
-        <div class="carrusel-track">
-          <img src="imagen/carrousel/campnou1.jpg" alt="Vista aérea del Camp Nou">
-          <img src="imagen/carrousel/aficion1.jpg" alt="Afición del FC Barcelona en el estadio">
-          <img src="imagen/carrousel/celebraciongol.jpg" alt="Jugadores del FC Barcelona celebrando un gol">
-          <img src="imagen/carrousel/partidonocturno.png" alt="Partido nocturno en el Camp Nou">
-          <img src="imagen/carrousel/detallegradas.png" alt="Detalle de las gradas del Camp Nou">
-          <img src="imagen/carrousel/entradacampnou.jpg" alt="Entrada principal del Camp Nou">
-          <img src="imagen/carrousel/barca7.jpg" alt="Celebración con la afición blaugrana">
-          <img src="imagen/carrousel/barca8.jpg" alt="Panorámica del estadio Camp Nou">
-          <img src="imagen/carrousel/barca9.jpg" alt="Equipo del FC Barcelona posando antes del partido">
-          <img src="imagen/carrousel/barca10.jpg" alt="Ambiente previo a un partido del Barça">
-        </div>
-      </div>
-    </section>
+<!-- HISTORIA -->
+<section id="historia" class="historia">
 
-    <!-- HISTORIA -->
-    <section id="historia" class="historia">
-      <h2>Historia y Trofeos</h2>
-      <p class="historia-intro">
-        Desde 1899, el FC Barcelona ha forjado su historia a través de la excelencia, la pasión y el compromiso con la cantera y la comunidad.  
-        Més que un club refleja su filosofía de juego, su identidad y su legado.
-      </p>
-      <div class="historia-grid">
-        <div class="historia-item">
-          <i class="fas fa-trophy"></i>
-          <h3>Ligas</h3>
-          <p>27 títulos de LaLiga</p>
-        </div>
-        <div class="historia-item">
-          <i class="fas fa-futbol"></i>
-          <h3>Copa del Rey</h3>
-          <p>31 títulos</p>
-        </div>
-        <div class="historia-item">
-          <i class="fas fa-globe"></i>
-          <h3>Ligas Europeas</h3>
-          <p>5 UEFA Champions League</p>
-        </div>
-      </div>
+  <h2>Historia y Trofeos</h2>
 
-      <table class="trofeos">
-        <thead>
-          <tr>
-            <th>Competición</th>
-            <th>Títulos</th>
-            <th>Último año</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>LaLiga</td>
-            <td>27</td>
-            <td>2022</td>
-          </tr>
-          <tr>
-            <td>Copa del Rey</td>
-            <td>31</td>
-            <td>2021</td>
-          </tr>
-          <tr>
-            <td>UEFA Champions League</td>
-            <td>5</td>
-            <td>2015</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+  <p>
+    Fundado en 1899, el Barça es referencia mundial
+    en fútbol, formación y valores.
+  </p>
 
-    <!-- PRIMER EQUIPO -->
-    <section id="primer-equipo" class="equipo">
-      <h2>Primer Equipo</h2>
-      <div class="equipo-grid">
-        <div class="card">
-          <div class="card-inner">
-            <div class="card-front">
-              <img src="imagen/jugadores/terstegen.jpg" alt="Marc-André ter Stegen">
-            </div>
-            <div class="card-back">
-              <h3>Ter Stegen</h3>
-              <span>Portero</span>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-inner">
-            <div class="card-front">
-              <img src="imagen/jugadores/gavi.jpg" alt="Gavi">
-            </div>
-            <div class="card-back">
-              <h3>Gavi</h3>
-              <span>Mediocampista</span>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-inner">
-            <div class="card-front">
-              <img src="imagen/jugadores/pedri.jpg" alt="Pedri">
-            </div>
-            <div class="card-back">
-              <h3>Pedri</h3>
-              <span>Mediocampista</span>
-            </div>
-          </div>
-        </div>
-        <!-- Añade el resto de jugadores de forma similar -->
-      </div>
-    </section>
 
-    <!-- NOTICIAS -->
-    <section id="noticias" class="noticias">
-      <h2>Últimas Noticias</h2>
-      <div class="noticias-grid">
-        <article>
-          <h3>Victoria en el Clásico</h3>
-          <p>El Barça se impone 3-1 al Real Madrid en un partido lleno de emociones y goles espectaculares.</p>
-        </article>
-        <article>
-          <h3>Renovación de Pedri</h3>
-          <p>El joven talento renueva contrato hasta 2027 consolidando su futuro en el club.</p>
-        </article>
-        <article>
-          <h3>Nueva equipación 2026</h3>
-          <p>Se presenta la nueva camiseta oficial de la temporada con un diseño moderno y elegante.</p>
-        </article>
-      </div>
-    </section>
+  <div class="historia-grid">
 
-    <!-- TIENDA -->
-    <section id="tienda" class="tienda">
-      <h2>Productos Destacados</h2>
-      <div class="tienda-grid">
-        <div class="producto">
-          <img src="imagen/tienda/camiseta1.jpg" alt="Camiseta oficial FC Barcelona">
-          <h4>Camiseta Oficial</h4>
-          <p>85€</p>
-          <button>Comprar</button>
-        </div>
-        <div class="producto">
-          <img src="imagen/tienda/chandal1.jpg" alt="Chándal oficial FC Barcelona">
-          <h4>Chándal Oficial</h4>
-          <p>120€</p>
-          <button>Comprar</button>
-        </div>
-        <div class="producto">
-          <img src="imagen/tienda/gorra1.jpg" alt="Gorra FC Barcelona">
-          <h4>Gorra Oficial</h4>
-          <p>25€</p>
-          <button>Comprar</button>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer>
-    <p class="copy">© 2026 FC Barcelona</p>
-    <div class="social-icons">
-      <a href="https://www.facebook.com/fcbarcelona" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://twitter.com/FCBarcelona" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.instagram.com/fcbarcelona/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.youtube.com/fcbarcelona" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
-      <a href="https://www.tiktok.com/@fcbarcelona" target="_blank" rel="noopener"><i class="fab fa-tiktok"></i></a>
+    <div class="historia-item">
+      <i class="fas fa-trophy"></i>
+      <h3>LaLiga</h3>
+      <p>27 títulos</p>
     </div>
-  </footer>
+
+    <div class="historia-item">
+      <i class="fas fa-futbol"></i>
+      <h3>Copa del Rey</h3>
+      <p>31 títulos</p>
+    </div>
+
+    <div class="historia-item">
+      <i class="fas fa-globe"></i>
+      <h3>Champions</h3>
+      <p>5 títulos</p>
+    </div>
+
+  </div>
+
+
+  <table class="trofeos">
+
+    <tr>
+      <th>Competición</th>
+      <th>Títulos</th>
+      <th>Último</th>
+    </tr>
+
+    <tr>
+      <td>LaLiga</td>
+      <td>27</td>
+      <td>2022</td>
+    </tr>
+
+    <tr>
+      <td>Copa del Rey</td>
+      <td>31</td>
+      <td>2021</td>
+    </tr>
+
+    <tr>
+      <td>Champions</td>
+      <td>5</td>
+      <td>2015</td>
+    </tr>
+
+  </table>
+
+</section>
+
+
+<!-- EQUIPO -->
+<section id="equipo" class="equipo">
+
+  <h2>Primer Equipo</h2>
+
+  <div class="equipo-grid">
+
+    <!-- TER STEGEN -->
+    <div class="card">
+      <div class="card-inner">
+
+        <div class="card-front">
+          <img src="imagen/jugadores/terstegen.jpg" alt="Marc-André Ter Stegen">
+        </div>
+
+        <div class="card-back">
+          <h3>Ter Stegen</h3>
+          <span>Portero</span>
+          <span class="dorsal">#1</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- GAVI -->
+    <div class="card">
+      <div class="card-inner">
+
+        <div class="card-front">
+          <img src="imagen/jugadores/gavi.jpg" alt="Gavi">
+        </div>
+
+        <div class="card-back">
+          <h3>Gavi</h3>
+          <span>Mediocentro</span>
+          <span class="dorsal">#6</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- PEDRI -->
+    <div class="card">
+      <div class="card-inner">
+
+        <div class="card-front">
+          <img src="imagen/jugadores/pedri.jpg" alt="Pedri">
+        </div>
+
+        <div class="card-back">
+          <h3>Pedri</h3>
+          <span>Mediocentro</span>
+          <span class="dorsal">#8</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ARAUJO -->
+    <div class="card">
+      <div class="card-inner">
+
+        <div class="card-front">
+          <img src="imagen/jugadores/araujp.jpg" alt="Araújo">
+        </div>
+
+        <div class="card-back">
+          <h3>Araújo</h3>
+          <span>Defensa</span>
+          <span class="dorsal">#4</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- LEWANDOWSKI -->
+    <div class="card">
+      <div class="card-inner">
+
+        <div class="card-front">
+          <img src="imagen/jugadores/lewandowski.jpg" alt="Lewandowski">
+        </div>
+
+        <div class="card-back">
+          <h3>Lewandowski</h3>
+          <span>Delantero</span>
+          <span class="dorsal">#9</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- RAPHINHA -->
+    <div class="card">
+      <div class="card-inner">
+
+        <div class="card-front">
+          <img src="imagen/jugadores/raphinha.jpg" alt="Raphinha">
+        </div>
+
+        <div class="card-back">
+          <h3>Raphinha</h3>
+          <span>Delantero</span>
+          <span class="dorsal">#11</span>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- NOTICIAS -->
+<section id="noticias" class="noticias">
+
+  <h2>Noticias</h2>
+
+  <div class="noticias-grid">
+
+    <article>
+      <h3>Victoria en el Clásico</h3>
+      <p>3-1 frente al Real Madrid.</p>
+    </article>
+
+    <article>
+      <h3>Renovación Pedri</h3>
+      <p>Contrato hasta 2029.</p>
+    </article>
+
+    <article>
+      <h3>Nueva equipación</h3>
+      <p>Presentada temporada 26/27.</p>
+    </article>
+
+  </div>
+
+</section>
+
+
+<!-- TIENDA -->
+<section id="tienda" class="tienda">
+
+  <h2>Tienda Oficial</h2>
+
+  <div class="tienda-grid">
+
+    <div class="producto">
+      <img src="imagen/tienda/1.jpg" alt="Camiseta FC Barcelona">
+      <h4>Camiseta</h4>
+      <p>85€</p>
+      <button>Comprar</button>
+    </div>
+
+    <div class="producto">
+      <img src="imagen/tienda/2.jpg" alt="Chándal FC Barcelona">
+      <h4>Chándal</h4>
+      <p>120€</p>
+      <button>Comprar</button>
+    </div>
+
+    <div class="producto">
+      <img src="imagen/tienda/3.jpg" alt="Gorra FC Barcelona">
+      <h4>Gorra</h4>
+      <p>25€</p>
+      <button>Comprar</button>
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer>
+
+  <p>© 2026 FC Barcelona</p>
+
+  <div class="social">
+
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+    <a href="#"><i class="fab fa-tiktok"></i></a>
+
+  </div>
+
+</footer>
 
 </body>
 </html>

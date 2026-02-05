@@ -1,50 +1,39 @@
-/* ========================= TABLET ========================= */
-@media (max-width: 768px) {
-  header {
-    padding: 12px 20px;
-  }
-  .logo {
-    height: 50px;
-  }
-  .menu {
-    flex-direction: column;
-    width: 180px;
-  }
-  .hero-overlay {
-    padding: 25px 30px;
-  }
-  .inicio {
-    padding: 60px 6%;
-  }
-  .carrusel-track img {
-    height: 300px;
-  }
-  .equipo-grid {
-    gap: 20px;
-  }
+/* TABLET */
+
+@media(max-width:768px){
+
+section{
+  padding:60px 6%;
 }
 
-/* ========================= MÓVIL ========================= */
-@media (max-width: 480px) {
-  header {
-    padding: 10px 15px;
-  }
-  .logo {
-    height: 45px;
-  }
-  .menu {
-    width: 140px;
-  }
-  .hero-overlay {
-    padding: 20px 15px;
-  }
-  .inicio {
-    padding: 50px 5%;
-  }
-  .carrusel-track img {
-    height: 220px;
-  }
-  .equipo-grid {
-    gap: 15px;
-  }
+.hero-overlay{
+  padding:25px 30px;
+}
+
+.carrusel img{
+  height:280px;
+}
+
+.form-container{
+  width:90%;
+}
+
+}
+
+/* MÓVIL */
+
+@media(max-width:480px){
+
+.menu{
+  flex-direction:column;
+}
+
+.hero-overlay{
+  padding:20px;
+}
+
+.carrusel img{
+  height:220px;
+}
+
 }
