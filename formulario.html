@@ -4,47 +4,81 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Trabaja con nosotros</title>
+<title>Trabaja con nosotros – FC Barcelona</title>
+<link rel="icon" href="imagen/escudo.png">
 
-<link rel="stylesheet" href="css/formulario.css">
+<!-- CSS PRINCIPAL -->
+<link rel="stylesheet" href="css/fcbarcelona.css">
 <link rel="stylesheet" href="css/responsive.css">
 
+<!-- CSS FORMULARIO -->
+<link rel="stylesheet" href="css/formulario.css">
+
+<!-- FUENTE -->
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
 </head>
 <body>
 
-<div class="form-container">
 
-<h1>Trabaja con Nosotros</h1>
+<!-- HEADER -->
+<header>
+  <div class="logo-menu">
 
-<form>
+    <a href="index.html">
+      <img src="imagen/escudo.png" class="logo" alt="Escudo FC Barcelona">
+    </a>
 
-<label>Nombre</label>
-<input type="text" required>
+    <ul class="menu">
+      <li><a href="fcbarcelona.html">Inicio</a></li>
+      <li><a href="fcbarcelona.html#historia">Historia</a></li>
+      <li><a href="fcbarcelona.html#equipo">Primer Equipo</a></li>
+      <li><a href="fcbarcelona.html#noticias">Noticias</a></li>
+      <li><a href="fcbarcelona.html#tienda">Tienda</a></li>
+      <li><a href="formulario.html">Trabaja con nosotros</a></li>
+    </ul>
 
-<label>Email</label>
-<input type="email" required>
+  </div>
+</header>
 
-<label>Teléfono</label>
-<input type="tel">
 
-<label>Puesto deseado</label>
-<select>
-<option>Jugador</option>
-<option>Staff</option>
-<option>Marketing</option>
-<option>Tecnología</option>
-</select>
+<!-- FORMULARIO -->
+<main>
 
-<label>Mensaje</label>
-<textarea></textarea>
+  <div class="form-container">
 
-<button>Enviar Solicitud</button>
+    <h1>Trabaja con Nosotros</h1>
 
-</form>
+    <form>
 
-</div>
+      <label>Nombre</label>
+      <input type="text" required>
+
+      <label>Email</label>
+      <input type="email" required>
+
+      <label>Teléfono</label>
+      <input type="tel">
+
+      <label>Puesto deseado</label>
+      <select>
+        <option>Jugador</option>
+        <option>Staff</option>
+        <option>Marketing</option>
+        <option>Tecnología</option>
+      </select>
+
+      <label>Mensaje</label>
+      <textarea></textarea>
+
+      <button type="submit">Enviar Solicitud</button>
+
+    </form>
+
+  </div>
+
+</main>
+
 
 </body>
 </html>
