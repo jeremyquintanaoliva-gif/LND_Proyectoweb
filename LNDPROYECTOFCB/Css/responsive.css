@@ -1,0 +1,222 @@
+/* =========================
+   TABLET (hasta 768px)
+========================= */
+@media (max-width: 768px) {
+
+  /* HEADER */
+  header {
+    padding: 12px 20px;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  /* MENÚ DESPLEGABLE */
+  .menu {
+    top: 45%;
+    left: 100%;
+    transform: translateY(0);
+
+    flex-direction: column;
+    width: 180px;
+    padding: 8px;
+
+    background: #004D98;
+    border-radius: 8px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  }
+
+  .menu li {
+    width: 100%;
+  }
+
+  .menu a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* HERO */
+  .hero-overlay {
+    padding: 25px 30px;
+  }
+
+  .hero-overlay h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero-overlay p {
+    font-size: 1.3rem;
+  }
+
+  /* INICIO */
+  .inicio {
+    padding: 60px 6%;
+  }
+
+  /* CARRUSEL */
+  .carrusel-track img {
+    height: 300px;
+  }
+
+  /* EQUIPO */
+  .equipo-grid {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 20px;
+  }
+
+  .card {
+    width: 130px;
+    height: 190px;
+  }
+
+  /* NOTICIAS */
+  .noticias {
+    padding: 50px 6%;
+  }
+
+  /* TIENDA */
+  .tienda {
+    padding: 50px 6%;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 25px 15px;
+  }
+
+}
+
+
+
+/* =========================
+   MÓVIL (hasta 480px)
+========================= */
+@media (max-width: 480px) {
+
+  /* HEADER */
+  header {
+    padding: 10px 15px;
+  }
+
+  .logo {
+    height: 45px;
+  }
+
+  /* MENÚ DESPLEGABLE */
+  .menu {
+    top: 40%;
+    left: 100%;
+    transform: translateY(0);
+
+    flex-direction: column;
+    width: 160px;
+    padding: 6px;
+
+    background: #004D98;
+    border-radius: 8px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  }
+
+  .menu li {
+    width: 100%;
+  }
+
+  .menu a {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  /* HERO */
+  .hero-overlay {
+    padding: 20px 18px;
+  }
+
+  .hero-overlay h1 {
+    font-size: 2rem;
+  }
+
+  .hero-overlay p {
+    font-size: 1.1rem;
+  }
+
+  /* INICIO */
+  .inicio {
+    padding: 50px 5%;
+  }
+
+  /* CARRUSEL */
+  .carrusel-track img {
+    height: 220px;
+  }
+
+  /* HISTORIA */
+  .historia {
+    padding: 50px 5%;
+  }
+
+  .historia-grid {
+    gap: 15px;
+  }
+
+  .historia-item {
+    width: 100%;
+  }
+
+  /* TABLA */
+  .trofeos {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  /* EQUIPO */
+  .equipo-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .card {
+    width: 120px;
+    height: 170px;
+  }
+
+  /* NOTICIAS */
+  .noticias {
+    padding: 40px 5%;
+  }
+
+  .noticias-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* TIENDA */
+  .tienda {
+    padding: 40px 5%;
+  }
+
+  .tienda-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .producto img {
+    height: 150px;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 20px 10px;
+    font-size: 0.9rem;
+  }
+
+  .social a {
+    font-size: 1.2rem;
+  }
+
+}
