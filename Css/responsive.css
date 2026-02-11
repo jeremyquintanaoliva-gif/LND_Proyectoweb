@@ -1,16 +1,9 @@
 /* =========================
-<<<<<<< HEAD
    TABLET (hasta 768px)
 ========================= */
 @media (max-width: 768px) {
 
   /* HEADER */
-=======
-   TABLET
-========================= */
-@media (max-width: 768px) {
-
->>>>>>> 8b0ebf7 (trabajo de hoy)
   header {
     padding: 12px 20px;
   }
@@ -19,7 +12,6 @@
     height: 50px;
   }
 
-<<<<<<< HEAD
   /* MENÚ DESPLEGABLE */
   .menu {
     top: 45%;
@@ -34,50 +26,23 @@
     border-radius: 8px;
 
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-=======
-  /* MENU VERTICAL */
-  .menu {
-    top: 100%;
-    left: 0;
-    transform: none;
-
-    flex-direction: column;
-    align-items: center;
-
-    width: 200px;
-
-    padding: 10px 0;
-    gap: 8px;
-
-    border-radius: 0 0 10px 10px;
->>>>>>> 8b0ebf7 (trabajo de hoy)
   }
 
   .menu li {
     width: 100%;
-<<<<<<< HEAD
-=======
-    text-align: center;
->>>>>>> 8b0ebf7 (trabajo de hoy)
   }
 
   .menu a {
     display: block;
     width: 100%;
-<<<<<<< HEAD
     text-align: center;
   }
 
   /* HERO */
-=======
-  }
-
->>>>>>> 8b0ebf7 (trabajo de hoy)
   .hero-overlay {
     padding: 25px 30px;
   }
 
-<<<<<<< HEAD
   .hero-overlay h1 {
     font-size: 2.4rem;
   }
@@ -87,21 +52,15 @@
   }
 
   /* INICIO */
-=======
->>>>>>> 8b0ebf7 (trabajo de hoy)
   .inicio {
     padding: 60px 6%;
   }
 
-<<<<<<< HEAD
   /* CARRUSEL */
-=======
->>>>>>> 8b0ebf7 (trabajo de hoy)
   .carrusel-track img {
     height: 300px;
   }
 
-<<<<<<< HEAD
   /* EQUIPO */
   .equipo-grid {
     grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
@@ -259,13 +218,7 @@
   .social a {
     font-size: 1.2rem;
   }
-=======
-  .equipo-grid {
-    gap: 20px;
-  }
 }
->>>>>>> 8b0ebf7 (trabajo de hoy)
-
 
 /* =========================
    MÓVIL
