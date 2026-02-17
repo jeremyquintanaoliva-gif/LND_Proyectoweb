@@ -9,34 +9,38 @@
   }
 
   .logo {
-    height: 50px;
+    height: 48px;
   }
 
-  /* MENÚ DESPLEGABLE */
+  /* MENÚ */
   .menu {
-    top: 45%;
-    left: 100%;
-    transform: translateY(0);
+    top: 100%;
+    left: 0;
+    transform: none;
 
     flex-direction: column;
-    width: 180px;
-    padding: 8px;
+    align-items: center;
+
+    width: 200px;
+    padding: 10px 0;
 
     background: #004D98;
-    border-radius: 8px;
+    border-radius: 0 0 10px 10px;
 
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
   }
 
   .menu li {
     width: 100%;
+    text-align: center;
   }
 
   .menu a {
     display: block;
     width: 100%;
-    text-align: center;
+    padding: 10px 0;
   }
+
 
   /* HERO */
   .hero-overlay {
@@ -48,43 +52,44 @@
   }
 
   .hero-overlay p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
-  /* INICIO */
-  .inicio {
-    padding: 60px 6%;
+
+  /* SECCIONES */
+  section {
+    padding: 70px 6%;
   }
+
 
   /* CARRUSEL */
   .carrusel-track img {
-    height: 300px;
+    height: 280px;
   }
+
 
   /* EQUIPO */
   .equipo-grid {
-    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 20px;
   }
 
   .card {
-    width: 130px;
-    height: 190px;
+    width: 140px;
+    height: 200px;
   }
+
 
   /* NOTICIAS */
-  .noticias {
-    padding: 50px 6%;
+  .noticias-grid {
+    max-width: 100%;
+    height: 380px;
   }
+
 
   /* TIENDA */
-  .tienda {
-    padding: 50px 6%;
-  }
-
-  /* FOOTER */
-  footer {
-    padding: 25px 15px;
+  .tienda-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 
 }
@@ -102,36 +107,21 @@
   }
 
   .logo {
-    height: 45px;
+    height: 42px;
   }
 
-  /* MENÚ DESPLEGABLE */
+
+  /* MENÚ */
   .menu {
-    top: 40%;
-    left: 100%;
-    transform: translateY(0);
-
-    flex-direction: column;
-    width: 160px;
-    padding: 6px;
-
-    background: #004D98;
-    border-radius: 8px;
-
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-  }
-
-  .menu li {
-    width: 100%;
+    width: 180px;
+    gap: 6px;
   }
 
   .menu a {
-    display: block;
-    width: 100%;
-    padding: 10px 0;
-    text-align: center;
     font-size: 0.9rem;
+    padding: 8px 0;
   }
+
 
   /* HERO */
   .hero-overlay {
@@ -146,34 +136,41 @@
     font-size: 1.1rem;
   }
 
-  /* INICIO */
-  .inicio {
-    padding: 50px 5%;
+
+  /* SECCIONES */
+  section {
+    padding: 60px 5%;
   }
+
 
   /* CARRUSEL */
   .carrusel-track img {
     height: 220px;
   }
 
-  /* HISTORIA */
-  .historia {
-    padding: 50px 5%;
-  }
 
+  /* HISTORIA */
   .historia-grid {
+    grid-template-columns: 1fr;
     gap: 15px;
   }
 
-  .historia-item {
-    width: 100%;
+
+  /* TROFEOS */
+  .trofeos-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
   }
 
-  /* TABLA */
-  .trofeos {
-    width: 100%;
-    font-size: 0.9rem;
+  .trofeos-tabla {
+    font-size: 0.85rem;
   }
+
+  .trofeos-tabla th,
+  .trofeos-tabla td {
+    padding: 8px;
+  }
+
 
   /* EQUIPO */
   .equipo-grid {
@@ -186,28 +183,35 @@
     height: 170px;
   }
 
-  /* NOTICIAS */
-  .noticias {
-    padding: 40px 5%;
+  .equipo h3 {
+    font-size: 1.6rem;
   }
 
+
+  /* NOTICIAS */
   .noticias-grid {
-    grid-template-columns: 1fr;
+    height: 320px;
   }
+
 
   /* TIENDA */
-  .tienda {
-    padding: 40px 5%;
-  }
-
   .tienda-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
   }
 
   .producto img {
-    height: 150px;
+    height: 140px;
   }
+
+
+  /* FORMULARIO */
+  .form-container {
+    width: 90%;
+    padding: 25px;
+    margin-top: 120px;
+  }
+
 
   /* FOOTER */
   footer {
@@ -217,63 +221,7 @@
 
   .social a {
     font-size: 1.2rem;
-  }
-}
-
-/* =========================
-   MÓVIL
-========================= */
-@media (max-width: 480px) {
-
-  header {
-    padding: 10px 15px;
+    margin: 0 5px;
   }
 
-  .logo {
-    height: 45px;
-  }
-
-  /* MENU VERTICAL COMPACTO */
-  .menu {
-    top: 100%;
-    left: 0;
-    transform: none;
-
-    flex-direction: column;
-    align-items: center;
-
-    width: 170px;
-
-    padding: 8px 0;
-    gap: 6px;
-
-    border-radius: 0 0 8px 8px;
-  }
-
-  .menu li {
-    width: 100%;
-    text-align: center;
-  }
-
-  .menu a {
-    display: block;
-    width: 100%;
-    padding: 8px 0;
-  }
-
-  .hero-overlay {
-    padding: 20px 15px;
-  }
-
-  .inicio {
-    padding: 50px 5%;
-  }
-
-  .carrusel-track img {
-    height: 220px;
-  }
-
-  .equipo-grid {
-    gap: 15px;
-  }
 }

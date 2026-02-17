@@ -51,6 +51,9 @@
 
   <!-- CARRUSEL -->
   <div class="carrusel">
+
+    <button class="flecha izq">&#10094;</button>
+
     <div class="carrusel-track">
       <img src="imagen/carrousel/campnou1.jpg" alt="Camp Nou lleno en partido oficial">
       <img src="imagen/carrousel/aficion1.jpg" alt="Afición del FC Barcelona animando">
@@ -63,68 +66,96 @@
       <img src="imagen/carrousel/golhistorico.jpg" alt="Gol histórico del FC Barcelona">
       <img src="imagen/carrousel/tifocampnou.png" alt="Tifo en el Camp Nou">
     </div>
+
+    <button class="flecha der">&#10095;</button>
+
+      <!-- Slider de velocidad  -->
+    <input type="range" min="1" max="10" value="3" class="carrusel-speed">
+
   </div>
 </section>
 
 <!-- HISTORIA -->
 <section id="historia" class="historia">
   <h2>Historia del FC Barcelona</h2>
-
+  
   <div class="historia-grid">
 
     <div class="historia-card">
       <h3>Orígenes y Fundación (1899)</h3>
       <p>
-        El FC Barcelona fue fundado el <strong>29 de noviembre de 1899</strong> por un grupo de futbolistas suizos,
-        ingleses y catalanes liderados por <strong>Joan Gamper</strong>. Desde sus inicios, el club se distinguió por ser
-        <em>“Més que un club”</em>, un símbolo de identidad y orgullo catalán, más allá del fútbol.
-        Su primera camiseta combinaba <strong>azul y granate</strong>, colores que se mantienen hasta hoy.
+        El FC Barcelona fue fundado el <strong>29 de noviembre de 1899</strong> por un grupo de futbolistas 
+        suizos, ingleses y catalanes liderados por <strong>Joan Gamper</strong>. Desde sus inicios, el club 
+        se distinguió por ser <em>“Més que un club”</em>, un símbolo de identidad y orgullo catalán, más allá 
+        del fútbol. Su primera camiseta combinaba <strong>azul y granate</strong>, colores que se mantienen hasta hoy.
       </p>
+      <img src="imagen/historia/creacion.png" alt="Fundación del FC Barcelona" class="Fundacion-img">
     </div>
 
     <div class="historia-card">
-      <h3>Primeros Años y Crecimiento</h3>
+      <h3>Primeros Años</h3>
       <p>
-        Durante las primeras décadas, el Barcelona participó en competiciones locales y nacionales,
-        destacando en la <strong>Copa del Rey</strong>, donde logró su primer título en 1910.
-        El club empezó a construir su legado deportivo y social.
+        Participó en competiciones locales y nacionales, logrando su primer título de <strong>Copa del Rey</strong> en 1910 y consolidando su legado deportivo.
       </p>
+      <img src="imagen/historia/primeroaños.png" alt="Primeros años del FC Barcelona" class="1anos-img">
     </div>
 
     <div class="historia-card">
       <h3>Inauguración del Camp Nou (1957)</h3>
       <p>
-        En 1957 se inauguró el <strong>Camp Nou</strong>, estadio que se convertiría en el corazón del club
-        y uno de los templos más emblemáticos del fútbol mundial.
+        El Camp Nou se convirtió en el corazón del club y un estadio emblemático del fútbol mundial, símbolo de su crecimiento.
       </p>
+      <img src="imagen/historia/inauguración.png" alt="Inauguración del Camp Nou" class="Campnou-img">
     </div>
 
     <div class="historia-card">
-      <h3>Décadas Doradas y Éxitos</h3>
+      <h3>Décadas Doradas</h3>
       <p>
-        Figuras legendarias como <strong>Kubala, Cruyff y Maradona</strong>
-        dejaron una huella imborrable en la historia del club.
+        Leyendas como <strong>Ronaldinho, Kubala, Cruyff, Messi, Ronaldo y Maradona</strong> dejaron huella y marcaron la historia del club.
       </p>
+      <img src="imagen/historia/epocadorada.png" alt="Décadas Doradas del FC Barcelona" class="Decadas-img">
     </div>
 
     <div class="historia-card">
       <h3>Era Guardiola (2008–2012)</h3>
       <p>
-        Bajo la dirección de <strong>Pep Guardiola</strong>, el Barça vivió su época más brillante,
-        logrando el <strong>sextete en 2009</strong>.
+        Bajo Pep Guardiola, el Barça vivió su etapa más brillante, logrando el <strong>sextete en 2009</strong> y revolucionando su estilo de juego.
       </p>
+      <img src="imagen/historia/guardiola.png" alt="Guardiola en el FC Barcelona" class="Guardiola-img">
+    </div>
+
+    <div class="historia-card messi-card">
+      <h3>La Era Messi (2004–2021)</h3>
+      <p>
+      Lionel Messi, máximo referente del club, anotó <strong>672 goles y 303 asistencias</strong> con el Barça, 
+      y en total <strong>787 goles y 383 asistencias</strong> en su carrera. Ganó <strong>35 títulos con el Barça</strong> 
+      y <strong>47 en total</strong>, obtuvo <strong>8 Balones de Oro</strong> y <strong>6 Botas de Oro</strong>, 
+      además de múltiples premios individuales. Lideró la época más exitosa del club y dejó una huella imborrable.
+      </p>
+      <img src="imagen/historia/messi.png" alt="Lionel Messi en el FC Barcelona" class="messi-img">
     </div>
 
     <div class="historia-card">
       <h3>Presente y Filosofía</h3>
       <p>
-        Hoy, el FC Barcelona sigue siendo un símbolo mundial.
-        <strong>La Masia</strong> continúa formando talentos con pasión y compromiso.
+        La Masia continúa formando talentos con pasión y compromiso, manteniendo la identidad y valores del FC Barcelona.
       </p>
+      <img src="imagen/historia/masia.png" alt="Masía del FC Barcelona" class="masia-img">
+    </div>
+
+    <!-- Nueva tarjeta: Evolución del Escudo -->
+    <div class="historia-card">
+      <h3>Evolución del Escudo</h3>
+      <p>
+        A lo largo de los años, el escudo del FC Barcelona ha sufrido ligeros cambios para modernizar su diseño, 
+        pero siempre conservando los colores y elementos que lo hacen único y reconocible mundialmente.
+      </p>
+      <img src="imagen/historia/cambioescudo.png" alt="Evolución del escudo del FC Barcelona" class="escudo-img">
     </div>
 
   </div>
 </section>
+
 
 
 <!-- TROFEOS -->
@@ -271,52 +302,95 @@
   <h3>Centrocampistas</h3>
   <div class="equipo-grid">
     <div class="card">
-      <div class="card-inner"><div class="card-front"><img src="imagen/jugadores/Gavi.jpg" alt="Gavi"></div>
+      <div class="card-inner">
+        <div class="card-front"><img src="imagen/jugadores/Centrocampista/Gavi.png" alt="Gavi"></div>
         <div class="card-back"><h3>Gavi</h3><span>Centrocampista - #6</span></div>
       </div>
     </div>
     <div class="card">
-      <div class="card-inner"><div class="card-front"><img src="imagen/jugadores/Pedri.jpg" alt="Pedri"></div>
+      <div class="card-inner">
+        <div class="card-front"><img src="imagen/jugadores/Centrocampista/Pedri.png" alt="Pedri"></div>
         <div class="card-back"><h3>Pedri</h3><span>Centrocampista - #8</span></div>
       </div>
     </div>
     <div class="card">
-      <div class="card-inner"><div class="card-front"><img src="imagen/jugadores/FerminLopez.jpg" alt="Fermín López"></div>
+      <div class="card-inner">
+        <div class="card-front"><img src="imagen/jugadores/Centrocampista/Fermin.png" alt="Fermín López"></div>
         <div class="card-back"><h3>Fermín López</h3><span>Centrocampista - #16</span></div>
       </div>
     </div>
     <div class="card">
-      <div class="card-inner"><div class="card-front"><img src="imagen/jugadores/MarcCasado.jpg" alt="Marc Casadó"></div>
+      <div class="card-inner">
+        <div class="card-front"><img src="imagen/jugadores/Centrocampista/MarcCasado.png" alt="Marc Casadó"></div>
         <div class="card-back"><h3>Marc Casadó</h3><span>Centrocampista - #17</span></div>
       </div>
     </div>
     <div class="card">
-      <div class="card-inner"><div class="card-front"><img src="imagen/jugadores/DaniOlmo.jpg" alt="Dani Olmo"></div>
+      <div class="card-inner">
+        <div class="card-front"><img src="imagen/jugadores/Centrocampista/DaniOlmo.png" alt="Dani Olmo"></div>
         <div class="card-back"><h3>Dani Olmo</h3><span>Centrocampista - #20</span></div>
       </div>
     </div>
     <div class="card">
-      <div class="card-inner"><div class="card-front"><img src="imagen/jugadores/FrenkieDeJong.jpg" alt="Frenkie de Jong"></div>
+      <div class="card-inner">
+        <div class="card-front"><img src="imagen/jugadores/Centrocampista/FrenkieDeJong.png" alt="Frenkie de Jong"></div>
         <div class="card-back"><h3>Frenkie de Jong</h3><span>Centrocampista - #21</span></div>
       </div>
     </div>
     <div class="card">
-      <div class="card-inner"><div class="card-front"><img src="imagen/jugadores/MarcBernal.jpg" alt="Marc Bernal"></div>
+      <div class="card-inner">
+        <div class="card-front"><img src="imagen/jugadores/Centrocampista/MarcBernal.png" alt="Marc Bernal"></div>
         <div class="card-back"><h3>Marc Bernal</h3><span>Centrocampista - #22</span></div>
       </div>
     </div>
   </div>
 
-  <!-- DELANTEROS -->
-  <h3>Delanteros</h3>
-  <div class="equipo-grid">
-    <div class="card"><div class="card-inner"><div class="card-front"><img src="imagen/jugadores/FerranTorres.jpg" alt="Ferran Torres"></div><div class="card-back"><h3>Ferran Torres</h3><span>Delantero - #7</span></div></div></div>
-    <div class="card"><div class="card-inner"><div class="card-front"><img src="imagen/jugadores/RobertLewandowski.jpg" alt="Robert Lewandowski"></div><div class="card-back"><h3>Robert Lewandowski</h3><span>Delantero - #9</span></div></div></div>
-    <div class="card"><div class="card-inner"><div class="card-front"><img src="imagen/jugadores/LamineYamal.jpg" alt="Lamine Yamal"></div><div class="card-back"><h3>Lamine Yamal</h3><span>Delantero - #10</span></div></div></div>
-    <div class="card"><div class="card-inner"><div class="card-front"><img src="imagen/jugadores/Raphinha.jpg" alt="Raphinha"></div><div class="card-back"><h3>Raphinha</h3><span>Delantero - #11</span></div></div></div>
-    <div class="card"><div class="card-inner"><div class="card-front"><img src="imagen/jugadores/MarcusRashford.jpg" alt="Marcus Rashford"></div><div class="card-back"><h3>Marcus Rashford</h3><span>Delantero - #14</span></div></div></div>
-    <div class="card"><div class="card-inner"><div class="card-front"><img src="imagen/jugadores/RoonyBardghji.jpg" alt="Roony Bardghji"></div><div class="card-back"><h3>Roony Bardghji</h3><span>Delantero - #19</span></div></div></div>
+ <!-- DELANTEROS -->
+<h3>Delanteros</h3>
+<div class="equipo-grid">
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front"><img src="imagen/jugadores/Delantero/FerranTorres.png" alt="Ferran Torres"></div>
+      <div class="card-back"><h3>Ferran Torres</h3><span>Delantero - #7</span></div>
+    </div>
   </div>
+
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front"><img src="imagen/jugadores/Delantero/RobertLewandowski.png" alt="Robert Lewandowski"></div>
+      <div class="card-back"><h3>Robert Lewandowski</h3><span>Delantero - #9</span></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front"><img src="imagen/jugadores/Delantero/LamineYamal.png" alt="Lamine Yamal"></div>
+      <div class="card-back"><h3>Lamine Yamal</h3><span>Delantero - #10</span></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front"><img src="imagen/jugadores/Delantero/Raphinha.png" alt="Raphinha"></div>
+      <div class="card-back"><h3>Raphinha</h3><span>Delantero - #11</span></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front"><img src="imagen/jugadores/Delantero/MarcusRashford.png" alt="Marcus Rashford"></div>
+      <div class="card-back"><h3>Marcus Rashford</h3><span>Delantero - #14</span></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front"><img src="imagen/jugadores/Delantero/RoonyBardghji.png" alt="Roony Bardghji"></div>
+      <div class="card-back"><h3>Roony Bardghji</h3><span>Delantero - #19</span></div>
+    </div>
+  </div>
+
+</div>
 </section>
 
 <!-- NOTICIAS -->
@@ -332,35 +406,75 @@
 <!-- TIENDA -->
 <section id="tienda" class="tienda">
   <h2>Tienda Oficial</h2>
+
   <div class="tienda-grid">
+
+    <!-- Camiseta Local -->
     <div class="producto">
-      <img src="imagen/tienda/camiseta1.jpg" alt="Camiseta local 2025/26">
-      <h3>Camiseta Local 2025/26</h3>
-      <p>Precio: 89€</p>
-      <button class="btn-comprar">Comprar</button>
+      <img src="imagen/tienda/1camisa.png" alt="Camiseta Local">
+      <h4>Camiseta Local 24/25</h4>
+      <p>89,99€</p>
+      <button>Comprar</button>
     </div>
+
+    <!-- Camiseta Visitante -->
     <div class="producto">
-      <img src="imagen/tienda/camiseta2.jpg" alt="Camiseta visitante 2025/26">
-      <h3>Camiseta Visitante 2025/26</h3>
-      <p>Precio: 89€</p>
-      <button class="btn-comprar">Comprar</button>
+      <img src="imagen/tienda/segundacamisa.png" alt="Camiseta Visitante">
+      <h4>Camiseta Visitante 24/25</h4>
+      <p>114,99€</p>
+      <button>Comprar</button>
     </div>
+
+    <!-- Tercera Equipación -->
     <div class="producto">
-      <img src="imagen/tienda/pantalon1.jpg" alt="Pantalón local 2025/26">
-      <h3>Pantalón Local 2025/26</h3>
-      <p>Precio: 49€</p>
-      <button class="btn-comprar">Comprar</button>
+      <img src="imagen/tienda/terceracamisa.png" alt="Tercera Equipación">
+      <h4>Tercera Equipación</h4>
+      <p>114,99€</p>
+      <button>Comprar</button>
     </div>
+
+    <!-- Cuarta Equipación -->
     <div class="producto">
-      <img src="imagen/tienda/bufanda.jpg" alt="Bufanda oficial">
-      <h3>Bufanda Oficial</h3>
-      <p>Precio: 25€</p>
-      <button class="btn-comprar">Comprar</button>
+      <img src="imagen/tienda/cuartaequipacion.png" alt="Cuarta Equipación">
+      <h4>Cuarta Equipación</h4>
+      <p>114,99€</p>
+      <button>Comprar</button>
     </div>
+
+        <!-- Primera Equipación Portero -->
+    <div class="producto">
+      <img src="imagen/tienda/primeraportero.png" alt="Primera camisa Portero">
+      <h4>Camisa portero</h4>
+      <p>114,99€</p>
+      <button>Comprar</button>
+    </div>
+
+        <!-- Segunda Equipación Portero -->
+    <div class="producto">
+      <img src="imagen/tienda/segundacamisa.png" alt="Segunda Equipación Porter">
+      <h4>Tercera Equipación</h4>
+      <p>114,99€</p>
+      <button>Comprar</button>
+    </div>
+
+    <!-- Peluche CAT -->
+    <div class="producto">
+      <img src="imagen/tienda/PelucheCat.png" alt="Peluche CAT">
+      <h4>Peluche CAT</h4>
+      <p>39,99€</p>
+      <button>Comprar</button>
+    </div>
+
+    <!-- Bufanda -->
+    <div class="producto">
+      <img src="imagen/tienda/bufanda.png" alt="Bufanda">
+      <h4>Bufanda Oficial</h4>
+      <p>19,99€</p>
+      <button>Comprar</button>
+    </div>
+
   </div>
 </section>
-
-</main>
 
 <!-- FOOTER -->
 <footer>
@@ -373,6 +487,8 @@
     <a href="#"><i class="fab fa-tiktok"></i></a>
   </div>
 </footer>
+
+<script src="js/main.js"></script>
 
 </body>
 </html>
