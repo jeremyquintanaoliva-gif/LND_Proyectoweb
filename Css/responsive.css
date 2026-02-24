@@ -80,6 +80,16 @@
   }
 
 
+  /* TEXTO DETRÁS DE LAS CARDS - TABLET */
+  .card-back h3 {
+    font-size: 14px;
+  }
+
+  .card-back span {
+    font-size: 12px;
+  }
+
+
   /* NOTICIAS */
   .noticias-grid {
     max-width: 100%;
@@ -185,6 +195,16 @@
 
   .equipo h3 {
     font-size: 1.6rem;
+  }
+
+
+  /* TEXTO DETRÁS DE LAS CARDS - MÓVIL */
+  .card-back h3 {
+    font-size: 13px;
+  }
+
+  .card-back span {
+    font-size: 11px;
   }
 
 
