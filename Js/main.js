@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let posicion = 0;
   let pausado = false;
 
-  // 1️⃣ Clonar imágenes para loop infinito
+  // Clonar imágenes para loop infinito
   const imgs = Array.from(track.children);
   imgs.forEach(img => track.appendChild(img.cloneNode(true)));
 
@@ -46,4 +46,22 @@ document.addEventListener("DOMContentLoaded", () => {
   // Pausa al pasar el ratón
   track.parentElement.addEventListener('mouseenter', () => pausado = true);
   track.parentElement.addEventListener('mouseleave', () => pausado = false);
+});
+
+// FILTRO DE JUGADORES
+document.addEventListener("DOMContentLoaded", function () {
+  const select = document.getElementById("posicion");
+  const cards = document.querySelectorAll("#equipo .card");
+
+  select.addEventListener("change", function () {
+    const valor = this.value;
+
+    cards.forEach(card => {
+      if (valor === "todos" || card.dataset.posicion === valor) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  });
 });

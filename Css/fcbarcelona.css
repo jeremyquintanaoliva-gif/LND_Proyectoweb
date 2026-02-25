@@ -442,8 +442,19 @@ section p {
   font-size: 16px;
   color: white;
 }
+/* Filtro de jugadores */
+.filtro-jugadores {
+  text-align: center;
+  margin-bottom: 30px;
+}
 
-
+.filtro-jugadores select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  cursor: pointer;
+}
 
 /* =========================
    NOTICIAS
@@ -477,14 +488,11 @@ section p {
 
 /* iframe responsivo */
 .noticias-grid iframe {
-.noticias-grid iframe {
   width: 100% !important;
   min-height: 500px !important;
   height: 100% !important;
   display: block;
   border: none;
-}
-
 }
 
 
@@ -522,7 +530,7 @@ section p {
   border-radius: 10px;
 }
 
-.producto h4 {
+.producto h3 {
   margin: 10px 0 5px;
 }
 
