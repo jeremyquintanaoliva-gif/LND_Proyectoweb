@@ -50,18 +50,51 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // FILTRO DE JUGADORES
 document.addEventListener("DOMContentLoaded", function () {
+
   const select = document.getElementById("posicion");
-  const cards = document.querySelectorAll("#equipo .card");
+  const cards = document.querySelectorAll(".card");
+  const titulos = document.querySelectorAll(".equipo h3");
 
   select.addEventListener("change", function () {
+
     const valor = this.value;
 
     cards.forEach(card => {
+
       if (valor === "todos" || card.dataset.posicion === valor) {
         card.style.display = "block";
       } else {
         card.style.display = "none";
       }
+
     });
+
+
+    titulos.forEach(titulo => {
+
+      const grid = titulo.nextElementSibling;
+      let visibles = 0;
+
+      grid.querySelectorAll(".card").forEach(card => {
+
+        if (card.style.display !== "none") {
+          visibles++;
+        }
+
+      });
+
+      if (valor === "todos") {
+        titulo.style.display = "block";
+      } 
+      else if (visibles === 0) {
+        titulo.style.display = "none";
+      } 
+      else {
+        titulo.style.display = "block";
+      }
+
+    });
+
   });
+
 });

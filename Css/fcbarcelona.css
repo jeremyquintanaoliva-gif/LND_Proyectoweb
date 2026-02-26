@@ -382,7 +382,7 @@ section p {
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
   gap: 30px;
-  justify-items: center; /* centra cada card dentro de su columna */
+  justify-items: center;
   grid-auto-rows: auto;
   margin-bottom: 50px;
 }
@@ -580,4 +580,49 @@ footer {
 @keyframes pulse {
   0%,100% { transform: scale(1); }
   50% { transform: scale(1.05); }
+}
+
+/* =========================
+   CENTRADO CORRECTO
+   (SIN ROMPER LAYOUT)
+========================= */
+
+/* Centrar títulos */
+section h2,
+.equipo h3 {
+  text-align: center;
+}
+
+
+/* HISTORIA */
+.historia-grid {
+  justify-content: center;
+  margin: 0 auto;
+}
+
+
+/* EQUIPO */
+.equipo-grid {
+  justify-content: center;
+  margin: 0 auto;
+}
+
+
+/* TROFEOS */
+.trofeos-grid {
+  justify-content: center;
+  margin: 0 auto;
+}
+
+
+/* TIENDA */
+.tienda-grid {
+  justify-content: center;
+  margin: 0 auto;
+}
+
+
+/* NOTICIAS */
+.noticias-grid {
+  margin: 0 auto;
 }
