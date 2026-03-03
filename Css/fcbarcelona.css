@@ -15,7 +15,6 @@ html {
 html, body {
   height: 100%;
   margin: 0;
-
 }
 
 body {
@@ -27,10 +26,8 @@ body {
 }
 
 main {
-  flex: 1; /* permite que el footer se quede al final */
+  flex: 1; /* Permite que el footer se quede al final */
 }
-
-
 
 /* =========================
    HEADER
@@ -55,28 +52,21 @@ header {
   margin-left: 20px;
 }
 
-/* MENU */
 .menu {
   position: absolute;
   left: 100%;
   top: 50%;
   transform: translateY(-50%);
-
   display: flex;
   gap: 15px;
   list-style: none;
-
   background: #004D98;
   padding: 12px 30px;
   border-radius: 8px;
-
-  min-width: 350px; /* evita palabras partidas */
+  min-width: 350px;
   white-space: nowrap;
-  flex-wrap: nowrap;
-
   opacity: 0;
   pointer-events: none;
-
   transition: all .3s ease;
 }
 
@@ -97,15 +87,12 @@ header {
   background: #A50044;
 }
 
-
-
 /* =========================
    HERO
 ========================= */
 .hero {
   height: 100vh;
   background: url("../imagen/campnou.jpg") center/cover no-repeat;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -117,30 +104,25 @@ header {
   color: white;
   border-radius: 15px;
   text-align: center;
-
   animation: pulse 4s infinite;
 }
 
-.hero-overlay h1 {
-  font-size: 3.2rem;
+.hero-overlay h1 { 
+  font-size: 3.2rem; 
 }
-
-.hero-overlay p {
-  font-size: 1.4rem;
-  margin-top: 10px;
-  color: white;
+.hero-overlay p { 
+  font-size: 1.4rem; 
+  margin-top: 10px; 
+  color: white; 
 }
-
-
 
 /* =========================
-   SECCIONES
+   SECCIONES GENERALES
 ========================= */
 section {
   width: 100%;
   padding: 90px 5%;
   scroll-margin-top: 90px;
-
 }
 
 section h2 {
@@ -150,47 +132,31 @@ section h2 {
   color: #004D98;
 }
 
-section h3 {
-  text-align: center;
-  margin-bottom: 15px;
-}
-
 section p {
   text-align: center;
-  color: #333;
 }
-
-
-
 /* =========================
-   CARRUSEL AUTOMÁTICO CON FLECHAS
-========================= */
-/* =========================
-   CARRUSEL PROFESIONAL INFINITO
+   CARRUSEL
 ========================= */
 .carrusel {
   position: relative;
   overflow: hidden;
-  margin-top: 40px;
+  margin: 40px auto;
   width: 100%;
+  max-width: 1200px;
 }
 
-.carrusel-track {
-  display: flex;
-  gap: 15px;
-  will-change: transform; /* mejora el rendimiento */
-}
-
+.carrusel-track { 
+  display: flex; 
+  gap: 15px; 
+  will-change: transform; }
 .carrusel img {
   height: 380px;
   flex: 0 0 auto;
   border-radius: 12px;
   object-fit: cover;
-  user-select: none;
-  pointer-events: none;
 }
 
-/* FLECHAS */
 .flecha {
   position: absolute;
   top: 50%;
@@ -203,170 +169,169 @@ section p {
   cursor: pointer;
   z-index: 10;
   border-radius: 50%;
-  transition: 0.3s;
 }
 
-.flecha:hover {
-  background: rgba(0,0,0,0.9);
-  transform: translateY(-50%) scale(1.1);
-}
-
-.flecha.izq {
-  left: 10px;
-}
-
-.flecha.der {
-  right: 10px;
-}
-
-/* SLIDER DE VELOCIDAD */
-.carrusel-speed {
-  position: absolute;
-  bottom: 15px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 200px;
-  cursor: pointer;
-  z-index: 10;
-  opacity: 0.8;
-}
+.flecha.izq { left: 10px; }
+.flecha.der { right: 10px; }
 
 /* =========================
-   HISTORIA
+   HISTORIA (Centrado y Altura uniforme)
 ========================= */
-.historia {
-  background: #E7F0FC;
-}
-
+.historia { background: #E7F0FC; }
 .historia-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 25px;
 }
 
 .historia-card {
   display: flex;
-  flex-direction: column; /* columna vertical */
+  flex-direction: column;
   background: white;
   padding: 25px;
   border-radius: 15px;
   box-shadow: 0 6px 15px rgba(0,0,0,.12);
-  transition: all .3s ease;
-  cursor: pointer;
+  width: 300px;
+  flex-grow: 1;
+  max-width: 350px;
+  transition: transform 0.3s;
 }
 
-.historia-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 12px 25px rgba(0,0,0,.2);
+.historia-card:hover { 
+  transform: scale(1.05); 
 }
 
 .historia-card h3 {
   color: #A50044;
-  font-size: 1.2rem;
-  min-height: 3em; /* fuerza que todos los h3 ocupen al menos 2 líneas de altura */
   text-align: center;
+  min-height: 3em;
 }
 
 .historia-card p {
-  font-size: 15px;
-  min-height: 90px; /* ajusta según tu texto promedio */
-  margin-top: 10px;
   text-align: center;
-  flex-grow: 1; /* hace que ocupe el espacio disponible */
+  flex-grow: 1;
+  margin-top: 10px;
 }
 
 .historia-card img {
-  display: block;
-  max-width: 100%;
-  height: 180px; /* todas las imágenes a la misma altura */
+  width: 100%;
+  height: 180px;
   object-fit: cover;
-  margin: 15px auto 0 auto; /* separa de texto y centra */
   border-radius: 12px;
+  margin-top: 15px;
 }
-
 
 /* =========================
    TROFEOS
 ========================= */
-.trofeos {
-  background: #F2F6FC;
+
+.trofeos { 
+  background: #F2F6FC; 
+  padding: 100px 5%; 
+}
+
+.trofeos h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #004D98;
+    margin-bottom: 50px;
 }
 
 .trofeos-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
-  gap: 25px;
-  margin-bottom: 40px;
+  display: flex;       
+  flex-wrap: wrap;     
+  justify-content: center; 
+  gap: 30px;          
+  max-width: 1200px;   
+  margin: 0 auto;      
 }
 
 .trofeo-item {
-  background: #2C6EB2;
+  background: #2C6EB2; 
   color: white;
+  padding: 30px;
   border-radius: 15px;
-  padding: 25px;
+  width: 250px;        
   text-align: center;
-  box-shadow: 0 6px 15px rgba(168, 9, 9, 0.15);
-  transition: transform .3s;
+  position: relative;  
+  
+ 
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+              box-shadow 0.4s ease, 
+              background-color 0.3s ease;
+  
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.trofeo-item p {
-  color: white; 
-}
-
+/* ANIMACIÓN DE AMPLIACIÓN AL PASAR EL RATÓN */
 .trofeo-item:hover {
-  transform: translateY(-8px);
+  transform: scale(1.1); 
+  background-color: #004D98; 
+  box-shadow: 0 15px 35px rgba(0, 77, 152, 0.4); 
+  z-index: 10; 
+}
+
+.trofeo-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain; 
+  margin-bottom: 20px;
+  transition: transform 0.4s ease; 
+}
+
+.trofeo-item:hover img {
+    transform: rotate(5deg);
 }
 
 .trofeo-item h3 {
-  color: #aa1f1f;
+  color: #860d0d;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
+.trofeo-item p {
+  font-size: 1.1rem;
+  color: #ffffff;
+  font-weight: 300;
+  margin: 0;
+}
 
-
-/* =========================
-   TABLA TROFEOS
-========================= */
+/* Tabla */
 .trofeos-tabla {
   width: 100%;
   border-collapse: collapse;
   margin-top: 40px;
-  box-shadow: 0 5px 15px rgba(0,0,0,.15);
-  transition: all 0.3s ease;
 }
 
-.trofeos-tabla th,
-.trofeos-tabla td {
-  border: 1px solid #ccc;
-  padding: 15px;
-  text-align: center;
-  transition: all 0.3s ease;
+.trofeos-tabla th { 
+  background: #2C6EB2; 
+  color: white; 
+  padding: 15px; 
 }
-
-.trofeos-tabla th {
-  background: #2C6EB2;
-  color: white;
-  font-size: 18px;
+.trofeos-tabla td { 
+  border: 1px solid #ccc; 
+  padding: 15px; 
+  text-align: center; 
 }
-
-/* Filas pares */
-.trofeos-tabla tbody tr:nth-child(even) td {
-  background: #E7F0FC;
+.trofeos-tabla tbody tr:nth-child(even) { 
+  background: #E7F0FC; 
 }
-
-/* Hover sobre fila: solo td */
-.trofeos-tabla tbody tr:hover td {
-  background: #cfe3fa;
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-  z-index: 1;
+.trofeos-tabla tbody tr:hover td { 
+  background: #cfe3fa; 
+  transform: scale(1.02); 
 }
-
-
 
 /* =========================
-   EQUIPO
+   EQUIPO (FIX DE FILTRO Y NOMBRES)
 ========================= */
-.equipo {
+.equipo { 
   background: white;
 }
 
@@ -376,29 +341,31 @@ section p {
   color: #A50044;
   text-transform: uppercase;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 .equipo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
   gap: 30px;
-  justify-items: center;
-  grid-auto-rows: auto;
   margin-bottom: 50px;
 }
 
+/* ESTRUCTURA DE LA CARTA */
 
-/* CARDS */
 .card {
   width: 180px;
-  height: 240px;
-  perspective: 1000px;
+  height: 250px;
+  perspective: 1200px;
+  background-color: transparent;
 }
 
 .card-inner {
   width: 100%;
   height: 100%;
-  transition: transform .8s;
+  position: relative;
+  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
   transform-style: preserve-3d;
 }
 
@@ -406,43 +373,67 @@ section p {
   transform: rotateY(180deg);
 }
 
-.card-front,
-.card-back {
+.card-front, .card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden; 
   border-radius: 12px;
   overflow: hidden;
 }
 
 .card-front {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  z-index: 2;
+  transform: rotateY(0deg);
 }
 
 .card-front img {
-  width: 100%;
-  height: 100%;
+  width: 100% !important;
+  height: 100% !important;
   object-fit: cover;
+  display: block;
 }
 
 .card-back {
-  background: linear-gradient(135deg,#A50044,#004D98);
+  background: linear-gradient(135deg, #A50044 0%, #004D98 100%);
   color: white;
   transform: rotateY(180deg);
+  z-index: 1;
+  border: 2px solid #FFC72C;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
+  align-items: center;
+  padding: 15px;
 }
 
-.card-back h3{
-  font-size: 16px;
-  color: white;
+.card-back h3 {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  margin: 0 0 8px 0 !important;
+  padding: 0 !important;
+  font-size: 1.1rem !important;
+  color: #ffffff !important;
+  text-transform: uppercase !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  text-align: center !important;
+  min-height: auto !important;
 }
-/* Filtro de jugadores */
+
+.card-back p {
+  display: block !important;
+  visibility: visible !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  color: #ffffff !important;
+  margin: 0 !important;
+  text-align: center !important;
+
+}
+
 .filtro-jugadores {
   text-align: center;
   margin-bottom: 30px;
@@ -453,108 +444,103 @@ section p {
   border-radius: 8px;
   border: 1px solid #ccc;
   font-size: 16px;
-  cursor: pointer;
 }
 
 /* =========================
    NOTICIAS
 ========================= */
-.noticias {
-  background: #F7F7F7;
-  padding: 80px 0;
-  text-align: center;
-  width: 100%;
-}
-
-.noticias h2 {
-  margin-bottom: 40px;
-  color: #004D98;
-  font-size: 2rem;
-}
-
-/* Contenedor del widget Feedwind */
+.noticias { background: #F7F7F7; text-align: center; }
 .noticias-grid {
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 900px;
-  height: 400px;
+  max-width: 1000px;
   margin: 0 auto;
-  overflow: hidden;
+  height: 450px;
   border-radius: 15px;
+  overflow: hidden;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-/* iframe responsivo */
-.noticias-grid iframe {
-  width: 100% !important;
-  min-height: 500px !important;
-  height: 100% !important;
-  display: block;
-  border: none;
-}
-
-
+.noticias-grid iframe { width: 100%; height: 100%; border: none; }
 
 /* =========================
-   TIENDA
+   TIENDA (CARTAS CENTRADAS)
 ========================= */
 .tienda {
   background: #E7F0FC;
+  padding: 90px 5%;
+  text-align: center; 
 }
 
 .tienda-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
-  gap: 25px;
+  display: flex;      
+  flex-wrap: wrap;    
+  justify-content: center; 
+  gap: 30px;           
+  max-width: 1200px;  
+  margin: 0 auto;      
 }
 
 .producto {
   background: white;
-  padding: 15px;
+  padding: 20px;
   border-radius: 15px;
-  text-align: center;
-  box-shadow: 0 5px 12px rgba(0,0,0,.2);
-  transition: transform .3s;
+  width: 280px;      
+  text-align: center;  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
 .producto:hover {
-  transform: translateY(-6px);
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
 .producto img {
   width: 100%;
-  height: 170px;
+  height: 200px;
   object-fit: cover;
   border-radius: 10px;
+  margin-bottom: 15px;
 }
 
 .producto h3 {
-  margin: 10px 0 5px;
+  font-size: 1.2rem;
+  color: #004D98;
+  margin-bottom: 10px;
 }
 
 .producto p {
-  font-weight: bold;
+  font-weight: 700;
+  color: #A50044;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
 }
 
+/* BOTÓN COMPRAR CENTRADO Y CON ANIMACIÓN */
 .producto button {
-  margin-top: 10px;
-  padding: 8px 15px;
+  padding: 10px 25px;
   background: #A50044;
   color: white;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  transition: background .3s;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .producto button:hover {
   background: #004D98;
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 77, 152, 0.4);
 }
 
-
-
+.producto button:active {
+  transform: scale(0.95); /* Se hunde ligeramente al hacer clic */
+}
 /* =========================
    FOOTER
 ========================= */
@@ -562,67 +548,19 @@ footer {
   background: #A50044;
   color: #FFC72C;
   text-align: center;
-  width: 100%;
   padding: 30px;
-  margin-top: auto; /* pega el footer abajo */
+  margin-top: auto;
 }
-
-
 
 /* =========================
    ANIMACIONES
 ========================= */
-@keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-90%); }
-}
-
 @keyframes pulse {
-  0%,100% { transform: scale(1); }
+  0%, 100% { transform: scale(1); }
   50% { transform: scale(1.05); }
 }
 
-/* =========================
-   CENTRADO CORRECTO
-   (SIN ROMPER LAYOUT)
-========================= */
-
-/* Centrar títulos */
-section h2,
-.equipo h3 {
-  text-align: center;
-}
-
-
-/* HISTORIA */
-.historia-grid {
-  justify-content: center;
-  margin: 0 auto;
-}
-
-
-/* EQUIPO */
-.equipo-grid {
-  justify-content: center;
-  margin: 0 auto;
-}
-
-
-/* TROFEOS */
-.trofeos-grid {
-  justify-content: center;
-  margin: 0 auto;
-}
-
-
-/* TIENDA */
-.tienda-grid {
-  justify-content: center;
-  margin: 0 auto;
-}
-
-
-/* NOTICIAS */
-.noticias-grid {
-  margin: 0 auto;
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-90%); }
 }

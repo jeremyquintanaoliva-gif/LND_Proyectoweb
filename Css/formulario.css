@@ -134,3 +134,35 @@ body{
   }
 
 }
+
+/* =========================
+   MEJORA PROFESIONAL FORM
+========================= */
+
+.form-container input:focus,
+.form-container select:focus,
+.form-container textarea:focus {
+
+  outline: none;
+
+  border-color: #004D98;
+
+  box-shadow: 0 0 6px rgba(0,77,152,0.4);
+}
+
+
+/* Placeholder más suave */
+.form-container input::placeholder,
+.form-container textarea::placeholder {
+  color: #999;
+}
+
+
+/* Animación botón */
+.form-container button {
+  letter-spacing: 1px;
+}
+
+.form-container button:active {
+  transform: scale(0.97);
+}

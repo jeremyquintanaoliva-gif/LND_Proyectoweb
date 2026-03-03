@@ -1,117 +1,53 @@
 /* =========================
-   TABLET (hasta 768px)
+   TABLET (Hasta 768px)
 ========================= */
 @media (max-width: 768px) {
-
-  /* HEADER */
   header {
     padding: 12px 20px;
   }
 
-  .logo {
-    height: 48px;
-  }
-
-  /* MENÚ */
+  /* MENÚ VERTICAL EN TABLET */
   .menu {
-    top: 100%;
-    left: 0;
-    transform: none;
-
-    flex-direction: column;
-    align-items: center;
-
-    width: 200px;
+    flex-direction: column; /* Cambio a vertical */
+    top: 70px; 
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 220px; /* Más estrecho al ser vertical */
+    gap: 0;
     padding: 10px 0;
-
-    background: #004D98;
-    border-radius: 0 0 10px 10px;
-
-    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    text-align: center;
   }
 
   .menu li {
     width: 100%;
-    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .menu li:last-child {
+    border-bottom: none;
   }
 
   .menu a {
     display: block;
+    padding: 12px;
     width: 100%;
-    padding: 10px 0;
   }
 
-
-  /* HERO */
-  .hero-overlay {
-    padding: 25px 30px;
-  }
-
-  .hero-overlay h1 {
-    font-size: 2.4rem;
-  }
-
-  .hero-overlay p {
-    font-size: 1.2rem;
-  }
-
-
-  /* SECCIONES */
-  section {
-    padding: 70px 6%;
-  }
-
-
-  /* CARRUSEL */
+  /* CARRUSEL Y TABLA */
   .carrusel-track img {
-    height: 280px;
+    height: 160px;
   }
 
-
-  /* EQUIPO */
-  .equipo-grid {
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 20px;
+  .trofeos-tabla {
+    width: 95%;
+    font-size: 0.85rem;
   }
-
-  .card {
-    width: 140px;
-    height: 200px;
-  }
-
-
-  /* TEXTO DETRÁS DE LAS CARDS - TABLET */
-  .card-back h3 {
-    font-size: 14px;
-  }
-
-  .card-back span {
-    font-size: 12px;
-  }
-
-
-  /* NOTICIAS */
-  .noticias-grid {
-    max-width: 100%;
-    height: 380px;
-  }
-
-
-  /* TIENDA */
-  .tienda-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
-
 }
 
-
-
 /* =========================
-   MÓVIL (hasta 480px)
+   MÓVIL (Hasta 480px)
 ========================= */
 @media (max-width: 480px) {
-
-  /* HEADER */
   header {
     padding: 10px 15px;
   }
@@ -120,128 +56,77 @@
     height: 42px;
   }
 
-
-  /* MENÚ */
+  /* MENÚ VERTICAL EN MÓVIL */
   .menu {
-    width: 180px;
-    gap: 6px;
+    flex-direction: column; /* Cambio a vertical */
+    top: 65px;
+    min-width: 180px;
+    gap: 0;
   }
 
   .menu a {
     font-size: 0.9rem;
-    padding: 8px 0;
+    padding: 10px 0;
   }
-
 
   /* HERO */
-  .hero-overlay {
-    padding: 20px 18px;
-  }
-
   .hero-overlay h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .hero-overlay p {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    text-align: center !important;
   }
 
-
-  /* SECCIONES */
-  section {
-    padding: 60px 5%;
-  }
-
-
-  /* CARRUSEL */
+  /* CARRUSEL MÁS PEQUEÑO */
   .carrusel-track img {
-    height: 220px;
+    height: 120px;
   }
 
-
-  /* HISTORIA */
-  .historia-grid {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
-
-
-  /* TROFEOS */
-  .trofeos-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-  }
-
+  /* TABLA SIN SCROLL */
   .trofeos-tabla {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
+    width: 100%;
+    border-radius: 0;
   }
 
-  .trofeos-tabla th,
+  .trofeos-tabla th, 
   .trofeos-tabla td {
-    padding: 8px;
+    padding: 5px 2px;
   }
 
-
-  /* EQUIPO */
-  .equipo-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+  /* EQUIPO Y TIENDA (2 COLUMNAS) */
+  .equipo-grid, .tienda-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
   }
 
   .card {
-    width: 120px;
-    height: 170px;
+    width: 140px;
+    height: 190px;
   }
 
-  .equipo h3 {
-    font-size: 1.6rem;
-  }
-
-
-  /* TEXTO DETRÁS DE LAS CARDS - MÓVIL */
-  .card-back h3 {
-    font-size: 13px;
-  }
-
-  .card-back span {
-    font-size: 11px;
-  }
-
-
-  /* NOTICIAS */
-  .noticias-grid {
-    height: 320px;
-  }
-
-
-  /* TIENDA */
-  .tienda-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+  .producto {
+    width: 46%;
+    padding: 10px;
   }
 
   .producto img {
-    height: 140px;
+    height: 110px;
   }
-
 
   /* FORMULARIO */
   .form-container {
-    width: 90%;
-    padding: 25px;
-    margin-top: 120px;
+    width: 95%;
+    padding: 20px;
+    margin-top: 80px;
   }
-
 
   /* FOOTER */
-  footer {
-    padding: 20px 10px;
-    font-size: 0.9rem;
-  }
-
   .social a {
-    font-size: 1.2rem;
-    margin: 0 5px;
+    font-size: 1.8rem;
   }
-
 }
