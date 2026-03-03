@@ -1,6 +1,8 @@
-/* =========================
-   RESET
-========================= */
+/* ==================================================
+   RESET Y BASE
+   ================================================== */
+
+/* Reset general */
 * {
   margin: 0;
   padding: 0;
@@ -8,36 +10,42 @@
   font-family: Montserrat, sans-serif;
 }
 
+/* Scroll suave */
 html {
   scroll-behavior: smooth;
-}
-
-html, body {
   height: 100%;
-  margin: 0;
 }
 
+/* Layout principal */
 body {
+  min-height: 100%;
   background: #fff;
   color: #111;
   line-height: 1.6;
+
   display: flex;
   flex-direction: column;
 }
 
 main {
-  flex: 1; /* Permite que el footer se quede al final */
+  flex: 1; /* Empuja el footer abajo */
 }
 
-/* =========================
-   HEADER
-========================= */
+
+
+/* ==================================================
+   HEADER Y MENÚ
+   ================================================== */
+
 header {
   position: fixed;
+  top: 0;
   width: 100%;
+  z-index: 100;
+
   background: #004D98;
   padding: 15px 40px;
-  z-index: 100;
+
   display: flex;
   align-items: center;
 }
@@ -47,52 +55,69 @@ header {
   cursor: pointer;
 }
 
+/* Contenedor logo + menú */
 .logo-menu {
   position: relative;
   margin-left: 20px;
 }
 
+/* Menú oculto */
 .menu {
   position: absolute;
   left: 100%;
   top: 50%;
   transform: translateY(-50%);
+
   display: flex;
   gap: 15px;
+
   list-style: none;
+
   background: #004D98;
   padding: 12px 30px;
   border-radius: 8px;
+
   min-width: 350px;
   white-space: nowrap;
+
   opacity: 0;
   pointer-events: none;
-  transition: all .3s ease;
+
+  transition: .3s;
 }
 
+/* Mostrar menú */
 .logo-menu:hover .menu {
   opacity: 1;
   pointer-events: auto;
 }
 
+/* Links menú */
 .menu a {
-  color: white;
+  color: #fff;
   text-decoration: none;
+
   padding: 6px 12px;
   border-radius: 4px;
-  transition: background .3s;
+
+  transition: .3s;
 }
 
 .menu a:hover {
   background: #A50044;
 }
 
-/* =========================
+
+
+/* ==================================================
    HERO
-========================= */
+   ================================================== */
+
 .hero {
   height: 100vh;
+
   background: url("../imagen/campnou.jpg") center/cover no-repeat;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,25 +125,31 @@ header {
 
 .hero-overlay {
   background: rgba(0,0,0,.75);
+  color: #fff;
+
   padding: 50px 70px;
-  color: white;
   border-radius: 15px;
+
   text-align: center;
+
   animation: pulse 4s infinite;
 }
 
-.hero-overlay h1 { 
-  font-size: 3.2rem; 
-}
-.hero-overlay p { 
-  font-size: 1.4rem; 
-  margin-top: 10px; 
-  color: white; 
+.hero-overlay h1 {
+  font-size: 3.2rem;
 }
 
-/* =========================
+.hero-overlay p {
+  font-size: 1.4rem;
+  margin-top: 10px;
+}
+
+
+
+/* ==================================================
    SECCIONES GENERALES
-========================= */
+   ================================================== */
+
 section {
   width: 100%;
   padding: 90px 5%;
@@ -135,432 +166,286 @@ section h2 {
 section p {
   text-align: center;
 }
-/* =========================
+
+
+
+/* ==================================================
    CARRUSEL
-========================= */
+   ================================================== */
+
 .carrusel {
   position: relative;
-  overflow: hidden;
-  margin: 40px auto;
+
   width: 100%;
   max-width: 1200px;
+
+  margin: 40px auto;
+
+  overflow: hidden;
 }
 
-.carrusel-track { 
-  display: flex; 
-  gap: 15px; 
-  will-change: transform; }
+.carrusel-track {
+  display: flex;
+  gap: 15px;
+
+  will-change: transform;
+}
+
 .carrusel img {
   height: 380px;
-  flex: 0 0 auto;
+
+  flex-shrink: 0;
+
   border-radius: 12px;
   object-fit: cover;
 }
 
+/* Flechas */
 .flecha {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0,0,0,0.6);
-  color: white;
+
+  background: rgba(0,0,0,.6);
+  color: #fff;
+
   border: none;
+  border-radius: 50%;
+
   font-size: 30px;
   padding: 10px 15px;
+
   cursor: pointer;
   z-index: 10;
-  border-radius: 50%;
 }
 
 .flecha.izq { left: 10px; }
 .flecha.der { right: 10px; }
 
-/* =========================
-   HISTORIA (Centrado y Altura uniforme)
-========================= */
-.historia { background: #E7F0FC; }
+
+
+/* ==================================================
+   HISTORIA
+   ================================================== */
+
+.historia {
+  background: #E7F0FC;
+}
+
+/* Layout flexible centrado */
 .historia-grid {
   display: flex;
   flex-wrap: wrap;
+
   justify-content: center;
+
   gap: 25px;
 }
 
 .historia-card {
-  display: flex;
-  flex-direction: column;
-  background: white;
+  width: 300px;
+  max-width: 350px;
+
+  background: #fff;
+
   padding: 25px;
   border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+
   box-shadow: 0 6px 15px rgba(0,0,0,.12);
-  width: 300px;
-  flex-grow: 1;
-  max-width: 350px;
-  transition: transform 0.3s;
+
+  transition: .3s;
 }
 
-.historia-card:hover { 
-  transform: scale(1.05); 
+.historia-card:hover {
+  transform: scale(1.05);
 }
 
-.historia-card h3 {
-  color: #A50044;
-  text-align: center;
-  min-height: 3em;
-}
 
-.historia-card p {
-  text-align: center;
-  flex-grow: 1;
-  margin-top: 10px;
-}
 
-.historia-card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 12px;
-  margin-top: 15px;
-}
-
-/* =========================
+/* ==================================================
    TROFEOS
-========================= */
+   ================================================== */
 
-.trofeos { 
-  background: #F2F6FC; 
-  padding: 100px 5%; 
+.trofeos {
+  background: #F2F6FC;
 }
 
-.trofeos h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    color: #004D98;
-    margin-bottom: 50px;
-}
-
+/* Contenedor flexible */
 .trofeos-grid {
-  display: flex;       
-  flex-wrap: wrap;     
-  justify-content: center; 
-  gap: 30px;          
-  max-width: 1200px;   
-  margin: 0 auto;      
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  gap: 30px;
+
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .trofeo-item {
-  background: #2C6EB2; 
-  color: white;
+  width: 250px;
+
+  background: #2C6EB2;
+  color: #fff;
+
   padding: 30px;
   border-radius: 15px;
-  width: 250px;        
+
   text-align: center;
-  position: relative;  
-  
- 
-  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
-              box-shadow 0.4s ease, 
-              background-color 0.3s ease;
-  
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  cursor: pointer;
+
+  transition: .4s;
 }
 
-/* ANIMACIÓN DE AMPLIACIÓN AL PASAR EL RATÓN */
 .trofeo-item:hover {
-  transform: scale(1.1); 
-  background-color: #004D98; 
-  box-shadow: 0 15px 35px rgba(0, 77, 152, 0.4); 
-  z-index: 10; 
+  transform: scale(1.1);
+  background: #004D98;
 }
 
-.trofeo-item img {
-  width: 100px;
-  height: 100px;
-  object-fit: contain; 
-  margin-bottom: 20px;
-  transition: transform 0.4s ease; 
-}
 
-.trofeo-item:hover img {
-    transform: rotate(5deg);
-}
 
-.trofeo-item h3 {
-  color: #860d0d;
-  font-size: 1.4rem;
-  margin-bottom: 10px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.trofeo-item p {
-  font-size: 1.1rem;
-  color: #ffffff;
-  font-weight: 300;
-  margin: 0;
-}
-
-/* Tabla */
-.trofeos-tabla {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 40px;
-}
-
-.trofeos-tabla th { 
-  background: #2C6EB2; 
-  color: white; 
-  padding: 15px; 
-}
-.trofeos-tabla td { 
-  border: 1px solid #ccc; 
-  padding: 15px; 
-  text-align: center; 
-}
-.trofeos-tabla tbody tr:nth-child(even) { 
-  background: #E7F0FC; 
-}
-.trofeos-tabla tbody tr:hover td { 
-  background: #cfe3fa; 
-  transform: scale(1.02); 
-}
-
-/* =========================
-   EQUIPO (FIX DE FILTRO Y NOMBRES)
-========================= */
-.equipo { 
-  background: white;
-}
-
-.equipo h3 {
-  font-size: 2rem;
-  margin: 40px 0 25px;
-  color: #A50044;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-align: center;
-}
+/* ==================================================
+   EQUIPO
+   ================================================== */
 
 .equipo-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; 
+
+  justify-content: center;
+
   gap: 30px;
-  margin-bottom: 50px;
 }
 
-/* ESTRUCTURA DE LA CARTA */
-
+/* Card 3D */
 .card {
   width: 180px;
   height: 250px;
+
   perspective: 1200px;
-  background-color: transparent;
 }
 
 .card-inner {
   width: 100%;
   height: 100%;
-  position: relative;
-  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+
   transform-style: preserve-3d;
+  transition: .7s;
 }
 
 .card:hover .card-inner {
   transform: rotateY(180deg);
 }
 
-.card-front, .card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; 
-  backface-visibility: hidden; 
-  border-radius: 12px;
-  overflow: hidden;
-}
 
-.card-front {
-  z-index: 2;
-  transform: rotateY(0deg);
-}
 
-.card-front img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover;
-  display: block;
-}
+/* ==================================================
+   TIENDA
+   ================================================== */
 
-.card-back {
-  background: linear-gradient(135deg, #A50044 0%, #004D98 100%);
-  color: white;
-  transform: rotateY(180deg);
-  z-index: 1;
-  border: 2px solid #FFC72C;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-}
-
-.card-back h3 {
-  display: block !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-  margin: 0 0 8px 0 !important;
-  padding: 0 !important;
-  font-size: 1.1rem !important;
-  color: #ffffff !important;
-  text-transform: uppercase !important;
-  font-weight: 700 !important;
-  line-height: 1.2 !important;
-  text-align: center !important;
-  min-height: auto !important;
-}
-
-.card-back p {
-  display: block !important;
-  visibility: visible !important;
-  font-size: 1rem !important;
-  font-weight: 600 !important;
-  color: #ffffff !important;
-  margin: 0 !important;
-  text-align: center !important;
-
-}
-
-.filtro-jugadores {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.filtro-jugadores select {
-  padding: 8px 12px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  font-size: 16px;
-}
-
-/* =========================
-   NOTICIAS
-========================= */
-.noticias { background: #F7F7F7; text-align: center; }
-.noticias-grid {
-  display: flex;
-  justify-content: center;
-  max-width: 1000px;
-  margin: 0 auto;
-  height: 450px;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-
-.noticias-grid iframe { width: 100%; height: 100%; border: none; }
-
-/* =========================
-   TIENDA (CARTAS CENTRADAS)
-========================= */
 .tienda {
   background: #E7F0FC;
-  padding: 90px 5%;
-  text-align: center; 
+  text-align: center;
 }
 
 .tienda-grid {
-  display: flex;      
-  flex-wrap: wrap;    
-  justify-content: center; 
-  gap: 30px;           
-  max-width: 1200px;  
-  margin: 0 auto;      
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  gap: 30px;
+
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .producto {
-  background: white;
+  width: 280px;
+
+  background: #fff;
+
   padding: 20px;
   border-radius: 15px;
-  width: 280px;      
-  text-align: center;  
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,.1);
+
+  transition: .3s;
 }
+
 .producto:hover {
   transform: translateY(-8px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
-.producto img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 15px;
+
+
+/* ==================================================
+   NOTICIAS
+   ================================================== */
+
+.noticias {
+  background: #F7F7F7;
+  text-align: center;
 }
 
-.producto h3 {
-  font-size: 1.2rem;
-  color: #004D98;
-  margin-bottom: 10px;
+.noticias-grid {
+  max-width: 1000px;
+  height: 450px;
+
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+
+  border-radius: 15px;
+  overflow: hidden;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,.15);
 }
 
-.producto p {
-  font-weight: 700;
-  color: #A50044;
-  font-size: 1.3rem;
-  margin-bottom: 15px;
-}
 
-/* BOTÓN COMPRAR CENTRADO Y CON ANIMACIÓN */
-.producto button {
-  padding: 10px 25px;
-  background: #A50044;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
-  text-transform: uppercase;
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
 
-.producto button:hover {
-  background: #004D98;
-  transform: scale(1.1);
-  box-shadow: 0 4px 12px rgba(0, 77, 152, 0.4);
-}
-
-.producto button:active {
-  transform: scale(0.95); /* Se hunde ligeramente al hacer clic */
-}
-/* =========================
+/* ==================================================
    FOOTER
-========================= */
+   ================================================== */
+
 footer {
   background: #A50044;
   color: #FFC72C;
+
   text-align: center;
   padding: 30px;
+
   margin-top: auto;
 }
 
-/* =========================
-   ANIMACIONES
-========================= */
-@keyframes pulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-}
 
-@keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-90%); }
+
+/* ==================================================
+   ANIMACIONES
+   ================================================== */
+
+@keyframes pulse {
+
+  0%,100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
 }
